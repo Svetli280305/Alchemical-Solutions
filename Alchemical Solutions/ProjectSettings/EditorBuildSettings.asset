@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Alchemical Solutions/MainMenu.unity
+    path: Assets/Alchemical Solutions/Scenes/MainMenu.unity
     guid: f85aa667ca1a3784c9abee49e8d7be6e
   - enabled: 1
-    path: Assets/Alchemical Solutions/SampleScene.unity
+    path: Assets/Alchemical Solutions/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
