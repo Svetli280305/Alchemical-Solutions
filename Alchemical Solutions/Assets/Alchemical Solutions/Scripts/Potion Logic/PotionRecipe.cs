@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "New BasicPotionRecipe", menuName = "Potions/BasicPotionRecipe")]
-public class PotionRecipe : MonoBehaviour
+public class PotionRecipe : ScriptableObject
 {
     public string rname;
     public string pelement;

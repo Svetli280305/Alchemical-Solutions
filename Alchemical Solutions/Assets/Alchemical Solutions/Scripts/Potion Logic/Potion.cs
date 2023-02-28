@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "New Potion", menuName = "Potions/CraftedPotion")]
-public class Potion : MonoBehaviour
+public class Potion : ScriptableObject
 {
     public string type;
     public int level;
