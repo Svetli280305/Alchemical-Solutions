@@ -11,7 +11,16 @@ public class PotionMaker : MonoBehaviour
     private List<string> modifiers = new List<string>();
     string pelement;
     int pcharge;
+    public Potion pot;
 
+    [System.Serializable]
+    public class Potion
+    {
+        public string ptype;
+        public int plevel;
+        public string psize;
+        public int pvalue;
+    }
 
     #region ButtonLogic
     public void Type(int val)
@@ -21,13 +30,13 @@ public class PotionMaker : MonoBehaviour
         switch (val)
         {
             case 1:
-                ptype = "Heat";
+                pot.ptype = "Heat";
                 break;
             case 2:
-                ptype = "Frost";
+                pot.ptype = "Frost";
                 break;
             case 3:
-                ptype = "Poison";
+                pot.ptype = "Poison";
                 break;
         }
     }
@@ -93,13 +102,13 @@ public class PotionMaker : MonoBehaviour
         switch (val)
         {
             case 1:
-                psize = "Small";
+                pot.psize = "Small";
                 break;
             case 2:
-                psize = "Medium";
+                pot.psize = "Medium";
                 break;
             case 3:
-                psize = "Large";
+                pot.psize = "Large";
                 break;
         }
     }
@@ -111,26 +120,21 @@ public class PotionMaker : MonoBehaviour
         switch (val)
         {
             case 1:
-                pvalue = 10;
+                pot.pvalue = 10;
                 break;
             case 2:
-                pvalue = 30;
+                pot.pvalue = 30;
                 break;
             case 3:
-                pvalue = 50;
+                pot.pvalue = 50;
                 break;
         }
     }
 
+
     public void Submit()
     {
-        bool useLevel;
-        bool useType;
-        bool straightFromRecipe;
-        if(plevel == 0){useLevel = false;}
-        if(ptype == null){ useType = false; }
-        if(psize == null && pvalue == 0) { straightFromRecipe = true; }
-
+        Debug.Log(pot);
         
     }
     #endregion

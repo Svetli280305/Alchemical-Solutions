@@ -10,4 +10,12 @@ public class Potion : ScriptableObject
     public int level;
     public int pvalue;
     public string size;
+    [System.Serializable]
+    public class SoundEffects
+    {
+        public int test = 4;
+    }
+
+    public SoundEffects sound;
 }
+
