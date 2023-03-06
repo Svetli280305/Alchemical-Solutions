@@ -20,6 +20,7 @@ public class PotionMaker : MonoBehaviour
         public int plevel;
         public string psize;
         public int pvalue;
+        public int ID;
     }
 
     public void Update()
