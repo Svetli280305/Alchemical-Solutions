@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
     public CharacterController controller;
 
@@ -17,12 +17,25 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private Inventory inventory;
+    [SerializeField] private UI_Inventory uiInventory;
     void Start()
     {
-
+        inventory = new Inventory();
     }
     // Update is called once per frame
     void Update()
+    {
+        HandleMovement();
+
+        
+
+
+
+        
+    }
+
+    private void HandleMovement()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
