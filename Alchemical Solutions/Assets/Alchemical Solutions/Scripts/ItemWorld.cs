@@ -9,10 +9,10 @@ public class ItemWorld : MonoBehaviour
 
     public static ItemWorld SpawnItemWorld(Vector3 position, Item item)
     {
-        Transform transform = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
+        Transform itemToSpawn = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
 
-        ItemWorld itemWorld = transform.GetComponent<ItemWorld>();
-        ItemWorld.SetItem(item);
+        ItemWorld itemWorld = itemToSpawn.GetComponent<ItemWorld>();
+        itemWorld.SetItem(item);
 
         return itemWorld;
     }
@@ -30,5 +30,16 @@ public class ItemWorld : MonoBehaviour
         this.item = item;
         spriteRenderer.sprite = item.GetSprite();
 
+    }
+
+    public Item GetItem()
+    {
+        return item;
+    }
+
+
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
     }
 }

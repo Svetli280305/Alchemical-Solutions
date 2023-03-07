@@ -18,12 +18,24 @@ public class UI_Inventory : MonoBehaviour
     public void SetInventory(Inventory inventory)
     {
         this.inventory = inventory;
+
+
+        inventory.OnItemListChanged += Inventory_OnItemListChanged;
         RefreshInventoryItems();
     }
 
+
+    private void Inventory_OnItemListChanged(object sender, System.EventArgs e)
+    {
+        RefreshInventoryItems();
+    }
     private void RefreshInventoryItems()
     {
-
+        foreach(Transform child in inventoryContainer)
+        {
+            if (child == itemSlotTemplate) continue;
+            Destroy(child.gameObject);
+        }
         // Go back to the video and setup UI similarly
         int x = 0;
         int y = 0;
