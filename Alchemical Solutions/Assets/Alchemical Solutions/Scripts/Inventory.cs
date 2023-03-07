@@ -10,6 +10,8 @@ public class Inventory
     {
         itemList = new List<Item>();
         AddItem(new Item { itemType = Item.ItemType.FrostPotion, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.HeatPotion, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.PoisonPotion, amount = 1 });
 
         Debug.Log(itemList.Count);
     }
@@ -17,5 +19,10 @@ public class Inventory
     public void AddItem(Item item)
     {
         itemList.Add(item);
+    }
+
+    public List<Item> GetItemList()
+    {
+        return itemList;
     }
 }

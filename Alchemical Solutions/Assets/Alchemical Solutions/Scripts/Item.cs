@@ -13,4 +13,15 @@ public class Item
 
     public ItemType itemType;
     public int amount;
+
+    public Sprite GetSprite()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.FrostPotion: return ItemAssets.Instance.frostPotionSprite;
+            case ItemType.HeatPotion: return ItemAssets.Instance.heatPotionSprite;
+            case ItemType.PoisonPotion: return ItemAssets.Instance.poisonPotionSprite;
+        }
+    }
 }

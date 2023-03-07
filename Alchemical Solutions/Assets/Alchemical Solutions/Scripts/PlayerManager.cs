@@ -21,7 +21,13 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
     void Start()
     {
+        
+    }
+
+    private void Awake()
+    {
         inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
     }
     // Update is called once per frame
     void Update()
@@ -34,6 +40,19 @@ public class PlayerManager : MonoBehaviour
 
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+    }
+
+
+
 
     private void HandleMovement()
     {
