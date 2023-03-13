@@ -34,6 +34,28 @@ public class PlayerManager : MonoBehaviour
     {
         HandleMovement();
 
+        
+
+
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+    }
+
+
+
+
+    private void HandleMovement()
+    {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (!GameObject.Find("GameManager").GetComponent<GameManager>().paused)
@@ -58,27 +80,5 @@ public class PlayerManager : MonoBehaviour
 
             controller.Move(velocity * Time.deltaTime);
         }
-
-
-
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
-        if (itemWorld != null)
-        {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
-    }
-
-
-
-
-    private void HandleMovement()
-    {
-        
     }
 }
