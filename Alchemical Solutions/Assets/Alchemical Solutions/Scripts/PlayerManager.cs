@@ -26,36 +26,14 @@ public class PlayerManager : MonoBehaviour
 
     private void Awake()
     {
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
+        //inventory = new Inventory();
+        //uiInventory.SetInventory(inventory);
     }
     // Update is called once per frame
     void Update()
     {
         HandleMovement();
 
-        
-
-
-
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
-        if (itemWorld != null)
-        {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
-    }
-
-
-
-
-    private void HandleMovement()
-    {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (!GameObject.Find("GameManager").GetComponent<GameManager>().paused)
@@ -80,5 +58,27 @@ public class PlayerManager : MonoBehaviour
 
             controller.Move(velocity * Time.deltaTime);
         }
+
+
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+    }
+
+
+
+
+    private void HandleMovement()
+    {
+        
     }
 }
