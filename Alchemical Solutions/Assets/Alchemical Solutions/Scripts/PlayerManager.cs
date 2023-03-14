@@ -21,13 +21,14 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
     void Start()
     {
-        
-    }
 
+    }
     private void Awake()
     {
         //inventory = new Inventory();
         //uiInventory.SetInventory(inventory);
+        // uiInventory.SetPlayer(this);
+
     }
     // Update is called once per frame
     void Update()

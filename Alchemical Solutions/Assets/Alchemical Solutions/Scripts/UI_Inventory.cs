@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using CodeMonkey.Utils;
+
 public class UI_Inventory : MonoBehaviour
 {
     private Inventory inventory;
     private Transform inventoryContainer;
     private Transform itemSlotTemplate;
-
+    private PlayerManager player;
 
     private void Awake()
     {
         inventoryContainer = transform.Find("InventoryContainer");
         itemSlotTemplate = inventoryContainer.Find("itemSlotTemplate");
+    }
+
+
+    public void SetPlayer(PlayerManager player)
+    {
+        this.player = player;
     }
     public void SetInventory(Inventory inventory)
     {
@@ -48,6 +56,25 @@ public class UI_Inventory : MonoBehaviour
             Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
             image.sprite = item.GetSprite();
             TextMeshProUGUI uiText = itemSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();
+
+            itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () =>
+            {
+                //Use Item
+                inventory.UseItem(item);
+            };
+
+            itemSlotRectTransform.GetComponent<Button_UI>().MouseRightClickFunc = () => {
+                //delete item
+                inventory.RemoveItem(item);
+                //Item duplicateItem = new Item { itemType = item.itemType, amount = item.amount };
+                // dropping item ItemWorld.DropItem(player.GetPosition(), item);
+            };
+
+
+
+
+
+
             if (item.amount > 1)
             {
                 uiText.SetText(item.amount.ToString());
