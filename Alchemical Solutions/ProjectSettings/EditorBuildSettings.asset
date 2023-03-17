@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alchemical Solutions/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Alchemical Solutions/Scenes/MinigameEndlessRunner.unity
+    guid: 76c18f40dd993f44384d4f26c4ff1dbd
   m_configObjects: {}
