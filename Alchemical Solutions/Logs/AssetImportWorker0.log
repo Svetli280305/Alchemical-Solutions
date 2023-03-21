@@ -1,0 +1,387 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19044.2728; Version 2009; 64bit' Language: 'en' Physical Memory: 16301 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/cawosanya2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49602
+Successfully changed project path to: C:/Users/cawosanya2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
+C:/Users/cawosanya2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 47.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/cawosanya2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   27.21.14.6109
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002052 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.588 seconds
+Domain Reload Profiling:
+	ReloadAssembly (588ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (455ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (150ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (171ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (81ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005630 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.010 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1011ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (807ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 74.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2027.
+Total: 2.555300 ms (FindLiveObjects: 0.159900 ms CreateObjectMapping: 0.058000 ms MarkObjects: 2.267900 ms  DeleteObjects: 0.068400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e392bb783fa76e71e4ab61b3b5411cb') in 0.170974 seconds 
+  Import took 0.173599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.252342 seconds.
+  path: Assets/Alchemical Solutions/Prefabs
+  artifactKey: Guid(f70019ca04659ba4d999db0517bcd8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs using Guid(f70019ca04659ba4d999db0517bcd8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0464ca8bba85196809b296570f61198') in 0.005069 seconds 
+  Import took 0.007685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.434661 seconds.
+  path: Assets/Alchemical Solutions/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69af240fd4564042f3ef1454a694ed0b') in 0.007658 seconds 
+  Import took 0.010732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.765335 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e408ae8ee0bc592ff8ba8db4a0bb9908') in 0.029476 seconds 
+  Import took 0.032308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.358734 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a1bafe2abd38e534377eaeac9b9524') in 0.030668 seconds 
+  Import took 0.033364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.885975 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f207f4b30071228ee986a94989a4e229') in 0.032386 seconds 
+  Import took 0.035092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.789770 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2beae172a0872e5a6cefc97a5b82aa') in 0.031431 seconds 
+  Import took 0.034639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.989058 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/AllPreview.png
+  artifactKey: Guid(960430a127008b143aba42161bbae1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/AllPreview.png using Guid(960430a127008b143aba42161bbae1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef71eb842d2a228d50b74961c6d3a91') in 0.127305 seconds 
+  Import took 0.130539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Characters/AllPreview.png
+  artifactKey: Guid(028d3e76e99a8b7449dee9e8911fccfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Characters/AllPreview.png using Guid(028d3e76e99a8b7449dee9e8911fccfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85c0c94cdc39b3f7abb32580c7ba2bb') in 0.015954 seconds 
+  Import took 0.018775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/Arrow.png
+  artifactKey: Guid(af2a5824dba796942806ee75ba32ba5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/Arrow.png using Guid(af2a5824dba796942806ee75ba32ba5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae2ce13ea845065f78ff87d57bee233') in 0.014025 seconds 
+  Import took 0.016742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Particle/AllPreview.png
+  artifactKey: Guid(bf71135e591bc614da8bea0b1c86c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Particle/AllPreview.png using Guid(bf71135e591bc614da8bea0b1c86c9df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc3916ab110e0752139efcddacf1f6d7') in 0.015851 seconds 
+  Import took 0.018486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/AllPreview.png
+  artifactKey: Guid(034891798e70e274ca8c9c0566819b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/AllPreview.png using Guid(034891798e70e274ca8c9c0566819b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda1042623297a98c934a71bbf88b4ee') in 0.019967 seconds 
+  Import took 0.022937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Projectile/AllPreview.png
+  artifactKey: Guid(f5b848cf4adbdef458e1be9072b02306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Projectile/AllPreview.png using Guid(f5b848cf4adbdef458e1be9072b02306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f56fe115b032f3f1e3f7e5f913d77a') in 0.015396 seconds 
+  Import took 0.018359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Characters/AllPreview2.png
+  artifactKey: Guid(71b9a6f78094da54eaa09b40150c18b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Characters/AllPreview2.png using Guid(71b9a6f78094da54eaa09b40150c18b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd807455f3c618ab692d2b4c844448f') in 0.015550 seconds 
+  Import took 0.018527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/Weapons/Bow2/Arrow.png
+  artifactKey: Guid(c3cf90938a174314d9674f4957296569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/Weapons/Bow2/Arrow.png using Guid(c3cf90938a174314d9674f4957296569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802c5836d9dbfba212965e0a2fbe0699') in 0.011059 seconds 
+  Import took 0.013601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.211042 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/Dialog/DialogueBoxSimple.png
+  artifactKey: Guid(3aaaf6ee658b5c14187d9dd4c3662c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/Dialog/DialogueBoxSimple.png using Guid(3aaaf6ee658b5c14187d9dd4c3662c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f7d9c6ac6f231ba6302fe764350bfd') in 0.012967 seconds 
+  Import took 0.015502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_1x.png
+  artifactKey: Guid(4e1272687616c4148979d6c3641b62a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_1x.png using Guid(4e1272687616c4148979d6c3641b62a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74ea9e9f126ac95e2bc619e1dc6f680') in 0.023072 seconds 
+  Import took 0.025342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/Sliced/GUI_1x_sliced.png
+  artifactKey: Guid(f440c173135b0d84bb7c08cf30492652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/Sliced/GUI_1x_sliced.png using Guid(f440c173135b0d84bb7c08cf30492652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5938330c3d3b1e68069d7eba0f8873b0') in 0.016335 seconds 
+  Import took 0.018844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/NinePathRect/DialogueBubble.png
+  artifactKey: Guid(42bb78ff268d95f45b7f6a2ab07d07a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/NinePathRect/DialogueBubble.png using Guid(42bb78ff268d95f45b7f6a2ab07d07a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c998deddbd7a2c0f343313bf09f0f7') in 0.013927 seconds 
+  Import took 0.016690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_2x.png
+  artifactKey: Guid(89ddc8b7242b6b14193874bbbfccbc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_2x.png using Guid(89ddc8b7242b6b14193874bbbfccbc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50a9911fb0879b22015d55fdf5dd1ca') in 0.015832 seconds 
+  Import took 0.018606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.359370 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/Sliced/GUI_2x_sliced.png
+  artifactKey: Guid(a795cf54424e1414699aac9317267f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/Sliced/GUI_2x_sliced.png using Guid(a795cf54424e1414699aac9317267f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19aa322b721a907889a080dc853a6b73') in 0.013281 seconds 
+  Import took 0.015853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_4x.png
+  artifactKey: Guid(6ec371f36583adc4ea1359c6dd1821ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Cryo's Mini GUI/GUI/GUI_4x.png using Guid(6ec371f36583adc4ea1359c6dd1821ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bed0973e368865d2d98d34085843ecd') in 0.014272 seconds 
+  Import took 0.016696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.694850 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421e6b3b2fe9109c5f85335152cad1a4') in 0.035286 seconds 
+  Import took 0.038987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.239288 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e244d0e81be7949c75ab06c0d88242d1') in 0.027347 seconds 
+  Import took 0.030359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.749360 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe0650c537e05c490343a405f605abb') in 0.028179 seconds 
+  Import took 0.031235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.566009 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d5f0c22577f7e79c5edc0995730bde') in 0.026574 seconds 
+  Import took 0.029575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.686070 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0161e697d492ce9c5777ea13213f2fb') in 0.026888 seconds 
+  Import took 0.029662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.768014 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc5894db40d8a66ff597ee521f09966') in 0.026421 seconds 
+  Import took 0.029258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.378181 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15cb0707cb6a197f64135e3b46537992') in 0.026520 seconds 
+  Import took 0.029317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.177256 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71941e235c1400c809c66c3736740f3d') in 0.036122 seconds 
+  Import took 0.039251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.735802 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f96fd09f89c1098374c04932f727e7') in 0.027340 seconds 
+  Import took 0.030413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.790877 seconds.
+  path: Assets/Alchemical Solutions/Prefabs/ItemUI.prefab
+  artifactKey: Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Prefabs/ItemUI.prefab using Guid(a8d3a24d73d7bfc4ebf729180bf3b643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98c9bfda3211cbc600e60ab190439d7f') in 0.026982 seconds 
+  Import took 0.029716 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
