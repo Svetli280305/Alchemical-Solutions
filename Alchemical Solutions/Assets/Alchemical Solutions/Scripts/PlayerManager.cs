@@ -17,17 +17,12 @@ public class PlayerManager : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    private Inventory inventory;
-    [SerializeField] private UI_Inventory uiInventory;
     void Start()
     {
 
     }
     private void Awake()
     {
-        //inventory = new Inventory(UseItem);
-        //uiInventory.SetInventory(inventory);
-        // uiInventory.SetPlayer(this);
 
     }
     // Update is called once per frame
@@ -40,27 +35,6 @@ public class PlayerManager : MonoBehaviour
 
 
 
-    }
-
-    private void UseItem(Item item)
-    {
-        switch (item.itemType)
-        {
-            case Item.ItemType.HeatPotion:
-                Debug.Log("Using Heat");
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.HeatPotion, amount = 1 });
-                break;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        ItemWorld itemWorld = other.GetComponent<ItemWorld>();
-        if (itemWorld != null)
-        {
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
     }
 
 
