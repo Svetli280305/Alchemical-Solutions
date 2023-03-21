@@ -76,3 +76,11 @@ crashlytics-build.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
 *.log
+Alchemical Solutions/Logs/AssetImportWorker0.log
+Alchemical Solutions/Logs/shadercompiler-AssetImportWorker0.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe1.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe2.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe3.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe4.log
+Alchemical Solutions/Logs/shadercompiler-UnityShaderCompiler.exe5.log
