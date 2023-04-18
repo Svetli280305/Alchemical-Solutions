@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.2846; Version 2009; 64bit' Language: 'en' Physical Memory: 16295 MB
+OS: 'Windows 10 Pro; OS build 19044.2728; Version 2009; 64bit' Language: 'en' Physical Memory: 16295 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/syotov2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
+C:/Users/syotov2021.SCHOOL/Documents/GitHub/Alchemical-Solutions2/Alchemical Solutions
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56023
-Successfully changed project path to: C:/Users/syotov2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
-C:/Users/syotov2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions
+49964
+Successfully changed project path to: C:/Users/syotov2021.SCHOOL/Documents/GitHub/Alchemical-Solutions2/Alchemical Solutions
+C:/Users/syotov2021.SCHOOL/Documents/GitHub/Alchemical-Solutions2/Alchemical Solutions
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 34.02 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/syotov2021/Documents/GitHub/Alchemical-Solutions/Alchemical Solutions/Assets
+[Subsystems] Discovering subsystems at path C:/Users/syotov2021.SCHOOL/Documents/GitHub/Alchemical-Solutions2/Alchemical Solutions/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,36 +35,36 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000992 seconds.
+Registered in 0.001134 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.387 seconds
+- Completed reload, in  0.414 seconds
 Domain Reload Profiling:
-	ReloadAssembly (387ms)
-		BeginReloadAssembly (36ms)
+	ReloadAssembly (414ms)
+		BeginReloadAssembly (34ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (301ms)
-			LoadAssemblies (35ms)
+		EndReloadAssembly (297ms)
+			LoadAssemblies (33ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (93ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (125ms)
+			SetupLoadedEditorAssemblies (118ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (34ms)
-				BeforeProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (32ms)
+				BeforeProcessingInitializeOnLoad (6ms)
 				ProcessInitializeOnLoadAttributes (57ms)
 				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (0ms)
@@ -73,34 +73,34 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002953 seconds.
+Registered in 0.002676 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.641 seconds
+- Completed reload, in  0.617 seconds
 Domain Reload Profiling:
-	ReloadAssembly (641ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (618ms)
+		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (510ms)
-			LoadAssemblies (57ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
+			SetupTypeCache (166ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (199ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (189ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (130ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (139ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1591 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 73.8 MB.
-System memory in use after: 73.8 MB.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.9 MB.
+System memory in use after: 74.0 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2024.
-Total: 2.102100 ms (FindLiveObjects: 0.128900 ms CreateObjectMapping: 0.030900 ms MarkObjects: 1.888300 ms  DeleteObjects: 0.052800 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2026.
+Total: 2.208600 ms (FindLiveObjects: 0.150900 ms CreateObjectMapping: 0.047900 ms MarkObjects: 1.960500 ms  DeleteObjects: 0.048600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,56 +131,160 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Alchemical Solutions/Minigames/Card Memory
-  artifactKey: Guid(d561a82e559aff04595904d072f4b5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alchemical Solutions/Minigames/Card Memory using Guid(d561a82e559aff04595904d072f4b5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f129fe75044c7b9c4d26482462e5e52b') in 0.016721 seconds 
-  Import took 0.019737 seconds .
+  path: Assets/Alchemical Solutions/Scenes/CardMemory.unity
+  artifactKey: Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Scenes/CardMemory.unity using Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff43c35776b1420f35d35bd3a7f2bb9d') in 0.011987 seconds 
+  Import took 0.013664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.013646 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/bear icon.png
+  artifactKey: Guid(d3a58465ee066f74786c7d8e28f4b12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/bear icon.png using Guid(d3a58465ee066f74786c7d8e28f4b12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db97ec2567b87f23d7deeae519387d6') in 0.059893 seconds 
+  Import took 0.062244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/zebra icon.png
+  artifactKey: Guid(1d0d7d91b49b3e0469fbaace3411cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/zebra icon.png using Guid(1d0d7d91b49b3e0469fbaace3411cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a547baedadec4b9458ba060592fedd') in 0.013430 seconds 
+  Import took 0.015380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/parrot icon.png
+  artifactKey: Guid(dbdd092b1bee59445a9ef2b2e6df3851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/parrot icon.png using Guid(dbdd092b1bee59445a9ef2b2e6df3851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b8cd7adbcf0cdd420f8062ce673594') in 0.018003 seconds 
+  Import took 0.019906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/frog icon.png
+  artifactKey: Guid(5ef5b8ff53d35854898810a9cec3bc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/frog icon.png using Guid(5ef5b8ff53d35854898810a9cec3bc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753f727d7a39b526eb57379926a96548') in 0.015381 seconds 
+  Import took 0.016966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/code back icon.png
+  artifactKey: Guid(c2d3d3f26bf33ab4297cf9c80d2a8f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/code back icon.png using Guid(c2d3d3f26bf33ab4297cf9c80d2a8f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86403634bf290456516b4cd3ba56b5b') in 0.015669 seconds 
+  Import took 0.017494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/elephant icon.png
+  artifactKey: Guid(ae230992476f72247935e2800606c6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/elephant icon.png using Guid(ae230992476f72247935e2800606c6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b3601090c1cf1392bc65ace5442e38') in 0.010713 seconds 
+  Import took 0.012606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/camel icon.png
+  artifactKey: Guid(c9ad22457815d9949aa4df18e78880ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/camel icon.png using Guid(c9ad22457815d9949aa4df18e78880ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd08ede9d497f7ccdf7eb26f55a07bb') in 0.014445 seconds 
+  Import took 0.016389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/eagle icon.png
+  artifactKey: Guid(f5d55cb270ce921498d7181b55f11e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/eagle icon.png using Guid(f5d55cb270ce921498d7181b55f11e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162ee175d4ce67507dc1ca0a19d03a6f') in 0.016902 seconds 
+  Import took 0.018692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/fish icon.png
+  artifactKey: Guid(6fce28a0281db8d4fb5b7f555ee84ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/fish icon.png using Guid(6fce28a0281db8d4fb5b7f555ee84ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc2f45a7aaee226bf7acfe86bebc4d9') in 0.015274 seconds 
+  Import took 0.016891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/gorilla icon.png
+  artifactKey: Guid(fe7c23620637e5646b9de1d414395642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/gorilla icon.png using Guid(fe7c23620637e5646b9de1d414395642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d00c75792848944c13304caa282be6') in 0.016337 seconds 
+  Import took 0.017859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/koala icon.png
+  artifactKey: Guid(62fccde795386404b825e99c1973f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/koala icon.png using Guid(62fccde795386404b825e99c1973f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2633b82888cbf56667d69338e00e9a') in 0.014808 seconds 
+  Import took 0.016449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/horse icon.png
+  artifactKey: Guid(35939907182b58944b044e28eba0a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/horse icon.png using Guid(35939907182b58944b044e28eba0a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5bbb3a11fc046a86f3e0afd2a096ca') in 0.014713 seconds 
+  Import took 0.016338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/turtle icon.png
+  artifactKey: Guid(c262ad803fc4a0b45b2e395d8301544d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/turtle icon.png using Guid(c262ad803fc4a0b45b2e395d8301544d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21415d92142388f48cf0282b24a92fa2') in 0.010980 seconds 
+  Import took 0.012571 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002527 seconds.
+Registered in 0.055823 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.602 seconds
+- Completed reload, in  0.630 seconds
 Domain Reload Profiling:
-	ReloadAssembly (602ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (630ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (476ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (511ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
+			SetupTypeCache (175ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (180ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (191ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1574 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 72.3 MB.
-System memory in use after: 72.5 MB.
+System memory in use before: 75.6 MB.
+System memory in use after: 75.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2028.
-Total: 2.209000 ms (FindLiveObjects: 0.120700 ms CreateObjectMapping: 0.037600 ms MarkObjects: 2.033100 ms  DeleteObjects: 0.016900 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2034.
+Total: 2.186900 ms (FindLiveObjects: 0.143500 ms CreateObjectMapping: 0.039000 ms MarkObjects: 1.990900 ms  DeleteObjects: 0.013000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -194,225 +298,385 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 109.474917 seconds.
-  path: Assets/Sprites/bear icon.png
-  artifactKey: Guid(d3a58465ee066f74786c7d8e28f4b12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/bear icon.png using Guid(d3a58465ee066f74786c7d8e28f4b12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db97ec2567b87f23d7deeae519387d6') in 0.060628 seconds 
-  Import took 0.063317 seconds .
+  Time since last request: 2458.717002 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Scripts/GameControl.cs
+  artifactKey: Guid(d283ed5e70aee5b42a451045fdbcc740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Scripts/GameControl.cs using Guid(d283ed5e70aee5b42a451045fdbcc740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8fe261d151afaf5c655b9697fabb07') in 0.014469 seconds 
+  Import took 0.016668 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Sprites/zebra icon.png
-  artifactKey: Guid(1d0d7d91b49b3e0469fbaace3411cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/zebra icon.png using Guid(1d0d7d91b49b3e0469fbaace3411cbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a547baedadec4b9458ba060592fedd') in 0.012016 seconds 
-  Import took 0.013895 seconds .
+  Time since last request: 465.392030 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png
+  artifactKey: Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png using Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54af993f460c5f084616ad8901df65b2') in 0.025039 seconds 
+  Import took 0.027439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png
+  artifactKey: Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png using Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b32453559e84b7a51eaa43e5870c85') in 0.007714 seconds 
+  Import took 0.009581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png
+  artifactKey: Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png using Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946192a348d0ebecff18e986d30aa070') in 0.007455 seconds 
+  Import took 0.009333 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000118 seconds.
-  path: Assets/Sprites/parrot icon.png
-  artifactKey: Guid(dbdd092b1bee59445a9ef2b2e6df3851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/parrot icon.png using Guid(dbdd092b1bee59445a9ef2b2e6df3851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b8cd7adbcf0cdd420f8062ce673594') in 0.009498 seconds 
-  Import took 0.011354 seconds .
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png
+  artifactKey: Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png using Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c729cd91405facc7d24989856b0bb4') in 0.007992 seconds 
+  Import took 0.009829 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Sprites/frog icon.png
-  artifactKey: Guid(5ef5b8ff53d35854898810a9cec3bc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/frog icon.png using Guid(5ef5b8ff53d35854898810a9cec3bc3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '753f727d7a39b526eb57379926a96548') in 0.007970 seconds 
-  Import took 0.009770 seconds .
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png
+  artifactKey: Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png using Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ee9b9540297ddbb4a37978929a4dd1') in 0.007917 seconds 
+  Import took 0.009736 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Sprites/code back icon.png
-  artifactKey: Guid(c2d3d3f26bf33ab4297cf9c80d2a8f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/code back icon.png using Guid(c2d3d3f26bf33ab4297cf9c80d2a8f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86403634bf290456516b4cd3ba56b5b') in 0.013018 seconds 
-  Import took 0.014970 seconds .
+  Time since last request: 0.000106 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png
+  artifactKey: Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png using Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae6cd69d4a0c1ba649f84d958cc6cfa') in 0.007739 seconds 
+  Import took 0.009553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png
+  artifactKey: Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png using Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3e08d31277f393ba22196a0bdbcdfe') in 0.007638 seconds 
+  Import took 0.009432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png
+  artifactKey: Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png using Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca75d319ba740c80aa492133100a8b8') in 0.007672 seconds 
+  Import took 0.009411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png
+  artifactKey: Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png using Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dda20f5f591eee42c3559cbc0a3e824') in 0.007259 seconds 
+  Import took 0.009059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png
+  artifactKey: Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png using Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223494fa7d1d2dbac471ddfefc847ed6') in 0.007757 seconds 
+  Import took 0.009677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png
+  artifactKey: Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png using Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001d10c5f138ff18d43d8c6b915ccce7') in 0.007094 seconds 
+  Import took 0.008716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png
+  artifactKey: Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png using Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb52421fa603668276a8acf9d86ae69e') in 0.007767 seconds 
+  Import took 0.009591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 144.722925 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png
+  artifactKey: Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png using Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d11de427d73f7b0bd8c544bf3f0fbf1') in 0.008235 seconds 
+  Import took 0.010426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png
+  artifactKey: Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png using Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d1f1dc8105848cc050ff70bb5d2b4d') in 0.007427 seconds 
+  Import took 0.009295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png
+  artifactKey: Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png using Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0346a350ec3f3ad104299f57ef915cb') in 0.007268 seconds 
+  Import took 0.009009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png
+  artifactKey: Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png using Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f608251c7da72dbe9397dbf50c616ce4') in 0.007006 seconds 
+  Import took 0.008884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png
+  artifactKey: Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png using Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a471fa31d4c0a12874595fbc74c398ea') in 0.006685 seconds 
+  Import took 0.008358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png
+  artifactKey: Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png using Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af38e501215cfaee381d5d63e9118350') in 0.006631 seconds 
+  Import took 0.008407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png
+  artifactKey: Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png using Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f62449f63720ea187860c2307cbdee2') in 0.007075 seconds 
+  Import took 0.009009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png
+  artifactKey: Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png using Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652de4dfe67a48574c2e8667f493fef5') in 0.007390 seconds 
+  Import took 0.009251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png
+  artifactKey: Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png using Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58b18e28e99452c2b34fa99cce47dc2') in 0.006384 seconds 
+  Import took 0.008344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png
+  artifactKey: Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png using Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c05250608e89a8a1958cce5ee55a6a') in 0.008111 seconds 
+  Import took 0.010001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png
+  artifactKey: Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png using Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb97521621821e78a8ed3a358f26249') in 0.007009 seconds 
+  Import took 0.008938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png
+  artifactKey: Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png using Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97251dac247a3368c69ca652d4b42cf') in 0.006654 seconds 
+  Import took 0.008466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.349676 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png
+  artifactKey: Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon1.png using Guid(511a31048a67ed74abc8820437b6524e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655fc939534f1eb2b1ef987027dc8c25') in 0.019883 seconds 
+  Import took 0.022142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png
+  artifactKey: Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon11.png using Guid(6a46f88c67b3065448dadccfd278ffd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9269057982ea5e7b5f89fb19d899dfe') in 0.009617 seconds 
+  Import took 0.011570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png
+  artifactKey: Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon2.png using Guid(d38f57ab770767d4abda0b262299a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1d05a799c6bf80aaf375f74570337c') in 0.009576 seconds 
+  Import took 0.011471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png
+  artifactKey: Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon4.png using Guid(133c3d4f3b51e2443b84d15b793eafb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb1695ae31fdbb7ccd4926b43c63f45') in 0.008670 seconds 
+  Import took 0.010593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png
+  artifactKey: Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon7.png using Guid(edda2e52069af7d4ba212092d79a2a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb0dd121fa9165ea9eb60ad115764eb') in 0.009452 seconds 
+  Import took 0.011158 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000112 seconds.
-  path: Assets/Sprites/elephant icon.png
-  artifactKey: Guid(ae230992476f72247935e2800606c6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/elephant icon.png using Guid(ae230992476f72247935e2800606c6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b3601090c1cf1392bc65ace5442e38') in 0.007657 seconds 
-  Import took 0.009367 seconds .
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png
+  artifactKey: Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon8.png using Guid(652f2a4781668d8478252b56c6429871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06a930ea9ced5e4142582b2e099433a') in 0.008886 seconds 
+  Import took 0.010763 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Sprites/camel icon.png
-  artifactKey: Guid(c9ad22457815d9949aa4df18e78880ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/camel icon.png using Guid(c9ad22457815d9949aa4df18e78880ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd08ede9d497f7ccdf7eb26f55a07bb') in 0.007010 seconds 
-  Import took 0.008833 seconds .
+  Time since last request: 0.000110 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png
+  artifactKey: Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon6.png using Guid(5228174c3b072f54ca7de718bb4c69d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d80434dedaeaec32cde6a8ea6901c8') in 0.009435 seconds 
+  Import took 0.011249 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Sprites/eagle icon.png
-  artifactKey: Guid(f5d55cb270ce921498d7181b55f11e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/eagle icon.png using Guid(f5d55cb270ce921498d7181b55f11e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162ee175d4ce67507dc1ca0a19d03a6f') in 0.006807 seconds 
-  Import took 0.008233 seconds .
+  Time since last request: 0.000100 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png
+  artifactKey: Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon3.png using Guid(77c3a55fd115b4c4aa76dfb0fa5b9c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd60d0659858d5651fc67c380426802ed') in 0.009114 seconds 
+  Import took 0.010951 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Sprites/fish icon.png
-  artifactKey: Guid(6fce28a0281db8d4fb5b7f555ee84ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/fish icon.png using Guid(6fce28a0281db8d4fb5b7f555ee84ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc2f45a7aaee226bf7acfe86bebc4d9') in 0.006652 seconds 
-  Import took 0.008147 seconds .
+  Time since last request: 0.000108 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png
+  artifactKey: Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon12.png using Guid(55506d8d2b008b94e9078c627ad47849) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b954d490218e65226c17a6106a67b4') in 0.008662 seconds 
+  Import took 0.010552 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/Sprites/gorilla icon.png
-  artifactKey: Guid(fe7c23620637e5646b9de1d414395642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/gorilla icon.png using Guid(fe7c23620637e5646b9de1d414395642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d00c75792848944c13304caa282be6') in 0.006717 seconds 
-  Import took 0.008483 seconds .
+  Time since last request: 0.000114 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png
+  artifactKey: Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon5.png using Guid(9014b4278d7b3db41a93c75420e48e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680387beec9ca9cbb488de022f8a23f0') in 0.008471 seconds 
+  Import took 0.010123 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/Sprites/koala icon.png
-  artifactKey: Guid(62fccde795386404b825e99c1973f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/koala icon.png using Guid(62fccde795386404b825e99c1973f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2633b82888cbf56667d69338e00e9a') in 0.006470 seconds 
-  Import took 0.008082 seconds .
+  Time since last request: 0.000104 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png
+  artifactKey: Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon9.png using Guid(dfb5d87948c422747ad083c635e186fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc2e74b02c34035ec97778c74fe34c1') in 0.009309 seconds 
+  Import took 0.011139 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Sprites/horse icon.png
-  artifactKey: Guid(35939907182b58944b044e28eba0a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/horse icon.png using Guid(35939907182b58944b044e28eba0a2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5bbb3a11fc046a86f3e0afd2a096ca') in 0.006612 seconds 
-  Import took 0.008099 seconds .
+  Time since last request: 0.000119 seconds.
+  path: Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png
+  artifactKey: Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/Minigames/Card Memory/Sprites/Potion icon10.png using Guid(25eaed56ee315ae41a03d89261c58bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee53101ea80592502567d4d2ecbfc51c') in 0.008992 seconds 
+  Import took 0.010945 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000087 seconds.
-  path: Assets/Sprites/turtle icon.png
-  artifactKey: Guid(c262ad803fc4a0b45b2e395d8301544d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/turtle icon.png using Guid(c262ad803fc4a0b45b2e395d8301544d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21415d92142388f48cf0282b24a92fa2') in 0.006823 seconds 
-  Import took 0.008453 seconds .
+  Time since last request: 12.289090 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/NinePathRect/DialogueBubble.png
+  artifactKey: Guid(42bb78ff268d95f45b7f6a2ab07d07a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/HUD/NinePathRect/DialogueBubble.png using Guid(42bb78ff268d95f45b7f6a2ab07d07a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c998deddbd7a2c0f343313bf09f0f7') in 0.013916 seconds 
+  Import took 0.016375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Projectile/EnergyBall.png
+  artifactKey: Guid(1d291b0955b373747b880a54c85ce1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/FX/Projectile/EnergyBall.png using Guid(1d291b0955b373747b880a54c85ce1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f29f4c9a49effe44c5ccdfc3de69ef2') in 0.012744 seconds 
+  Import took 0.014623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Monsters/Dragon.png
+  artifactKey: Guid(5074e49d34c00a7409318376ac6c935c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Actor/Monsters/Dragon.png using Guid(5074e49d34c00a7409318376ac6c935c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ba433461ae5d47d088c8ff8881b683') in 0.013333 seconds 
+  Import took 0.015244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/Potion/EmptyPot.png
+  artifactKey: Guid(819e2084ed8cab34fa3e5d9f261e5473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Items/Potion/EmptyPot.png using Guid(819e2084ed8cab34fa3e5d9f261e5473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb5558b94541e452d7b4d5b2e44a97a') in 0.012654 seconds 
+  Import took 0.014581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Backgrounds/Tilesets/Interior/Elements.png
+  artifactKey: Guid(035d22fd2168e4a4c80d90dad6dcefd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alchemical Solutions/_Graphics/Ninja Adventure/Backgrounds/Tilesets/Interior/Elements.png using Guid(035d22fd2168e4a4c80d90dad6dcefd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e711ffc17f7dd9f59571e0cb484066ec') in 0.013124 seconds 
+  Import took 0.015201 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002508 seconds.
+Registered in 0.002715 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.591 seconds
+- Completed reload, in  0.564 seconds
 Domain Reload Profiling:
-	ReloadAssembly (591ms)
+	ReloadAssembly (564ms)
 		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (475ms)
-			LoadAssemblies (54ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (452ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
+			SetupTypeCache (156ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (179ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (168ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (119ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (31ms)
+				ProcessInitializeOnLoadAttributes (124ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1574 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.5 MB.
-System memory in use after: 75.6 MB.
+System memory in use before: 75.6 MB.
+System memory in use after: 75.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2036.
-Total: 2.212200 ms (FindLiveObjects: 0.117000 ms CreateObjectMapping: 0.037900 ms MarkObjects: 2.043400 ms  DeleteObjects: 0.013200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 23.823532 seconds.
-  path: Assets/Alchemical Solutions/Scenes/GameScene.unity
-  artifactKey: Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alchemical Solutions/Scenes/GameScene.unity using Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e9604a5c22d236524f5eeacf651370') in 0.010145 seconds 
-  Import took 0.012333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.900337 seconds.
-  path: Assets/Alchemical Solutions/Scenes/CardMemory.unity
-  artifactKey: Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Alchemical Solutions/Scenes/CardMemory.unity using Guid(e161646c74c992f4dbce1154ec488bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff43c35776b1420f35d35bd3a7f2bb9d') in 0.005522 seconds 
-  Import took 0.008000 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002679 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.656 seconds
-Domain Reload Profiling:
-	ReloadAssembly (656ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (525ms)
-			LoadAssemblies (61ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (172ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (203ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (135ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1574 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.5 MB.
-System memory in use after: 75.6 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2038.
-Total: 2.159300 ms (FindLiveObjects: 0.120600 ms CreateObjectMapping: 0.030700 ms MarkObjects: 1.993500 ms  DeleteObjects: 0.013800 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2047.
+Total: 2.021600 ms (FindLiveObjects: 0.116300 ms CreateObjectMapping: 0.034500 ms MarkObjects: 1.858500 ms  DeleteObjects: 0.011800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -427,48 +691,104 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002524 seconds.
+Registered in 0.002444 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
+- Completed reload, in  0.569 seconds
 Domain Reload Profiling:
-	ReloadAssembly (601ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (570ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (476ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (453ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (158ms)
+			SetupTypeCache (155ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (182ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (168ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
+				BeforeProcessingInitializeOnLoad (33ms)
 				ProcessInitializeOnLoadAttributes (122ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1574 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 75.5 MB.
-System memory in use after: 75.6 MB.
+System memory in use before: 75.7 MB.
+System memory in use after: 75.8 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2040.
-Total: 2.303400 ms (FindLiveObjects: 0.119200 ms CreateObjectMapping: 0.038800 ms MarkObjects: 2.130700 ms  DeleteObjects: 0.014000 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2049.
+Total: 2.302800 ms (FindLiveObjects: 0.143700 ms CreateObjectMapping: 0.047100 ms MarkObjects: 2.097900 ms  DeleteObjects: 0.013200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002471 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.553 seconds
+Domain Reload Profiling:
+	ReloadAssembly (554ms)
+		BeginReloadAssembly (69ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (448ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (167ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1574 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.7 MB.
+System memory in use after: 75.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2051.
+Total: 2.094100 ms (FindLiveObjects: 0.119300 ms CreateObjectMapping: 0.040100 ms MarkObjects: 1.922800 ms  DeleteObjects: 0.011200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
