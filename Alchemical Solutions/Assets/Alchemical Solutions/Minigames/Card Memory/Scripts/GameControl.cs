@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class GameControl : MonoBehaviour
     int numOfTokens = 8;
     float yChange = -5f;
     private int clickCount = 0;
+    public int matched;
 
     void StartGame()
     {
@@ -93,6 +95,7 @@ public class GameControl : MonoBehaviour
             tokenUp2.matched = true;
             tokenUp1 = null;
             tokenUp2 = null;
+            matched -=1;
         }
     }
 
@@ -103,6 +106,7 @@ public class GameControl : MonoBehaviour
         yStart = 3.8f;
         numOfTokens = 24;
         yChange = -1.5f;
+        matched = 12;
         StartGame();
     }
 
@@ -113,12 +117,14 @@ public class GameControl : MonoBehaviour
         yStart = 3.4f;
         numOfTokens = 16;
         yChange = -2.2f;
+        matched = 8;
         StartGame();
     }
 
     public void EasySetup()
     {
         HideButtons();
+        matched = 4;
         StartGame();
     }
 
@@ -143,5 +149,13 @@ public class GameControl : MonoBehaviour
         easyBtn.onClick.AddListener(() => EasySetup());
         mediumBtn.onClick.AddListener(() => MediumSetup());
         hardBtn.onClick.AddListener(() => HardSetup());
+    }
+
+    void Update()
+    {
+        if (matched == 0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainToken : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class MainToken : MonoBehaviour
                 controlScript.TokenDown(this);
             }
         }
+
     }
 
     private void Awake()
