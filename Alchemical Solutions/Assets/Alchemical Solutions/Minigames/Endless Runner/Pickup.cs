@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+
+    HighScore hs;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +19,22 @@ public class Pickup : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        hs = GameObject.Find("Player").GetComponent<HighScore>();
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (gameObject.tag == "Collectible")
+        if(col.gameObject.tag == "Player")
         {
+            Destroy();
+        }
+        
+    }
+
+    private void Destroy()
+    {
+            hs.currentScore += 1;
             Destroy(gameObject);
-        }        
     }
 }

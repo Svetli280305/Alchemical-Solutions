@@ -2,25 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class HighScore : MonoBehaviour
 {
-    float currentScore;
-    [SerializeField] float scoreIncrease;
+    public int currentScore;
+    public int SceneToLoad;
+    public int maxScore;
     [SerializeField] TextMeshProUGUI scoreText;
     // Start is called before the first frame update
     void Start()
     {
-        currentScore = 0f;
+        currentScore = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentScore = currentScore += scoreIncrease * Time.deltaTime;
+        scoreText.SetText("Score: " + currentScore.ToString());
         
-        float outputScore = Mathf.Round(currentScore);
-        Debug.Log(outputScore);
-        scoreText.SetText("Score: " + outputScore);
+        if (currentScore == maxScore)
+        {
+            SceneManager.LoadScene(SceneToLoad);
+        }
     }
 }

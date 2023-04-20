@@ -856,6 +856,7 @@ MonoBehaviour:
   mediumBtn: {fileID: 144080699}
   hardBtn: {fileID: 1123261893}
   matched: 1
+  SceneToLoad: 1
 --- !u!4 &1079030843
 Transform:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Board : MonoBehaviour
 {
@@ -9,6 +11,11 @@ public class Board : MonoBehaviour
     public TetrominoData[] tetrominoes;
     public Vector2Int boardSize = new Vector2Int(10, 20);
     public Vector3Int spawnPosition = new Vector3Int(-1, 8, 0);
+    [SerializeField] TextMeshProUGUI scoreText;
+
+    public int linescleared;
+    public int maxScore;
+    public int SceneToLoad;
 
     public RectInt Bounds {
         get
@@ -107,7 +114,7 @@ public class Board : MonoBehaviour
             // because the tiles above will fall down when a row is cleared
             if (IsLineFull(row)) {
                 LineClear(row);
-                Debug.Log(+1);
+                linescleared +=1;
             } else {
                 row++;
             }
@@ -155,6 +162,16 @@ public class Board : MonoBehaviour
             }
 
             row++;
+        }
+    }
+
+    void Update()
+    {
+        scoreText.SetText("Score: " + linescleared.ToString());
+
+        if (linescleared == maxScore)
+        {
+            SceneManager.LoadScene(SceneToLoad);
         }
     }
 

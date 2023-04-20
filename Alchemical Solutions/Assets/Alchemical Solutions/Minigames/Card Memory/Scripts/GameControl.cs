@@ -23,6 +23,7 @@ public class GameControl : MonoBehaviour
     float yChange = -5f;
     private int clickCount = 0;
     public int matched;
+    public int SceneToLoad;
 
     void StartGame()
     {
@@ -155,7 +156,7 @@ public class GameControl : MonoBehaviour
     {
         if (matched == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneToLoad);
         }
     }
 }
