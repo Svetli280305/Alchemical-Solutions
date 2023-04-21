@@ -18,7 +18,7 @@ public class RandomMinigamePicker : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Is in trigger");
-                int index = Random.Range(2, 4);
+                int index = Random.Range(2, 5);
                 SceneManager.LoadScene(index);
                 Cursor.lockState = CursorLockMode.Confined;
             }

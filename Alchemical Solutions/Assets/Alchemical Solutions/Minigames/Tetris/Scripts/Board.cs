@@ -169,7 +169,7 @@ public class Board : MonoBehaviour
     {
         scoreText.SetText("Score: " + linescleared.ToString());
 
-        if (linescleared == maxScore)
+        if (linescleared == maxScore || linescleared > maxScore)
         {
             SceneManager.LoadScene(SceneToLoad);
         }

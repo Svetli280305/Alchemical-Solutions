@@ -923,7 +923,7 @@ MonoBehaviour:
   spawnPosition: {x: -1, y: 8, z: 0}
   scoreText: {fileID: 283332497}
   linescleared: 0
-  maxScore: 2
+  maxScore: 10
   SceneToLoad: 1
 --- !u!1 &2144466704
 GameObject:
