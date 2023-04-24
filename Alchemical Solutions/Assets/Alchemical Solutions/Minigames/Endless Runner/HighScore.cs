@@ -24,6 +24,7 @@ public class HighScore : MonoBehaviour
         if (currentScore == maxScore)
         {
             SceneManager.LoadScene(SceneToLoad);
+            Debug.Log("Potion +1");
         }
     }
 }

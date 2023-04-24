@@ -157,6 +157,7 @@ public class GameControl : MonoBehaviour
         if (matched == 0)
         {
             SceneManager.LoadScene(SceneToLoad);
+            Debug.Log("Potion +1");
         }
     }
 }

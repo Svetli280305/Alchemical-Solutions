@@ -172,6 +172,7 @@ public class Board : MonoBehaviour
         if (linescleared == maxScore || linescleared > maxScore)
         {
             SceneManager.LoadScene(SceneToLoad);
+            Debug.Log("Potion +1");
         }
     }
 
