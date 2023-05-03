@@ -1,29 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
-
-public class RandomMinigamePicker : MonoBehaviour
+public class NPC : MonoBehaviour
 {
-
+    public GameObject Dialogue;
     bool active = false;
     public bool outOfRange = true;
     [SerializeField] GameObject SceneChangerGUI;
+    public DialogueRunner dialogueRunner;
+    // Start is called before the first frame update
+    void Start()
+    {
+    }
 
-    private void Update()
+    void Update()
     {
         if (active == true)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Is in trigger");
-                int index = Random.Range(3, 6);
-                SceneManager.LoadScene(index);
-                Cursor.lockState = CursorLockMode.Confined;
+                Dialogue.SetActive(true);
+                dialogueRunner.StartDialogue("HelloYarn");
             }
         }
     }
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,6 +35,7 @@ public class RandomMinigamePicker : MonoBehaviour
         {
             active = true;
             SceneChangerGUI.SetActive(true);
+
         }
     }
 
