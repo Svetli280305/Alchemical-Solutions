@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 611f726883531614c8eabb225646caf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 0
+  sceneToLoad: 2
   outOfRange: 1
   SceneChangerGUI: {fileID: 6566072014513812671}
 --- !u!65 &65205794
