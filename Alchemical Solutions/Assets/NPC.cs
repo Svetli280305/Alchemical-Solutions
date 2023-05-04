@@ -24,6 +24,7 @@ public class NPC : MonoBehaviour
                 Debug.Log("Is in trigger");
                 Dialogue.SetActive(true);
                 dialogueRunner.StartDialogue("HelloYarn");
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
@@ -45,6 +46,8 @@ public class NPC : MonoBehaviour
         {
             active = false;
             SceneChangerGUI.SetActive(false);
+            Dialogue.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
