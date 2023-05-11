@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "11e7146c-4aaf-954f-f1c8-c412475cd0c5": {
+      "ProjectGuid": "11e7146c-4aaf-954f-f1c8-c412475cd0c5",
+      "DisplayName": "UnityEngine.UI",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

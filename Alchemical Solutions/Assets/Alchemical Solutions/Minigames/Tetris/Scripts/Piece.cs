@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Piece : MonoBehaviour
 {
@@ -45,14 +46,14 @@ public class Piece : MonoBehaviour
         lockTime += Time.deltaTime;
 
         // Handle rotation
-        if (Input.GetKeyDown(KeyCode.Q)) {
+        if (Keyboard.current.qKey.wasPressedThisFrame) {
             Rotate(-1);
-        } else if (Input.GetKeyDown(KeyCode.E)) {
+        } else if (Keyboard.current.eKey.wasPressedThisFrame) {
             Rotate(1);
         }
 
         // Handle hard drop
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame) {
             HardDrop();
         }
 
@@ -73,7 +74,7 @@ public class Piece : MonoBehaviour
     private void HandleMoveInputs()
     {
         // Soft drop movement
-        if (Input.GetKey(KeyCode.S))
+        if (Keyboard.current.sKey.wasPressedThisFrame)
         {
             if (Move(Vector2Int.down)) {
                 // Update the step time to prevent double movement
@@ -82,9 +83,9 @@ public class Piece : MonoBehaviour
         }
 
         // Left/right movement
-        if (Input.GetKey(KeyCode.A)) {
+        if (Keyboard.current.aKey.wasPressedThisFrame) {
             Move(Vector2Int.left);
-        } else if (Input.GetKey(KeyCode.D)) {
+        } else if (Keyboard.current.dKey.wasPressedThisFrame) {
             Move(Vector2Int.right);
         }
     }

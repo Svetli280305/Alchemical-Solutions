@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8bba05998086a449ef488b2de93239, type: 3}
+  m_Name: TestingList
+  m_EditorClassIdentifier: 
+  _items:
+  - ItemData: {fileID: 11400000, guid: 69941ac266f02aa4db7a3fd482c01351, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: fcd8f30a88d48984e86eb49c600e02f6, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: d2471c7361fdc424393df6d419ecab29, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 39e695d5c6b494c46b22d5f13384bf73, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 38ff794a396ea15418f985d4c56a0201, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: d02343b7251c11a46b7ffeb8e5d099f9, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 2548df4aaf45675498056653bf0e7322, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 38a04dfa3092a4d4bbc07e464330212a, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 439e07ea4c1f40648bb3dda9c187ae0b, type: 2}
+    Amount: 20
+  - ItemData: {fileID: 11400000, guid: 69748b2396b103e42a8a16f6cba31e03, type: 2}
+    Amount: 20
+  _maxAllowedGold: 2000
+  _sellMarkUp: 0.5
+  _buyMarkUp: 0.1

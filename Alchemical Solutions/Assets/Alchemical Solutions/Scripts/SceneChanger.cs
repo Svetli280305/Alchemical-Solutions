@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class SceneChanger : MonoBehaviour
     {
         if(active == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 Debug.Log("Is in trigger");
                 SceneManager.LoadScene(sceneToLoad);

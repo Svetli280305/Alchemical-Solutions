@@ -13,6 +13,8 @@ public class Board : MonoBehaviour
     public Vector3Int spawnPosition = new Vector3Int(-1, 8, 0);
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [SerializeField] private InventoryItemData potionTarget;
+
     public int linescleared;
     public int maxScore;
     public int SceneToLoad;

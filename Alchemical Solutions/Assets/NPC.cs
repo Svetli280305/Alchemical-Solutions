@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Yarn.Unity;
 
 public class NPC : MonoBehaviour
@@ -19,7 +20,7 @@ public class NPC : MonoBehaviour
     {
         if (active == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 Debug.Log("Is in trigger");
                 Dialogue.SetActive(true);
