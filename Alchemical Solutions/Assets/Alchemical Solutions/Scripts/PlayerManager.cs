@@ -92,6 +92,7 @@ public class PlayerManager : MonoBehaviour
     {
         controls = new InputMaster();
         controller = GetComponent<CharacterController>();
+        SaveGameManager.TryLoadData();
     }
 
     private void Update()

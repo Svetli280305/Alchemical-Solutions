@@ -33,11 +33,13 @@ public class UICanvas : MonoBehaviour
 
     private void Update()
     {
-        if(Keyboard.current.escapeKey.wasPressedThisFrame) _shopKeeperDisplay.gameObject.SetActive(false);
+        if(Keyboard.current.escapeKey.wasPressedThisFrame) { _shopKeeperDisplay.gameObject.SetActive(false); Cursor.lockState = CursorLockMode.Locked;  }
+        
     }
     private void DisplayShopWindow(ShopSystem shopSystem, PlayerInventoryHolder playerInventory)
     {
         _shopKeeperDisplay.gameObject.SetActive(true);
         _shopKeeperDisplay.DisplayShopWindow(shopSystem, playerInventory);
+        Cursor.lockState = CursorLockMode.None;
     }
 }

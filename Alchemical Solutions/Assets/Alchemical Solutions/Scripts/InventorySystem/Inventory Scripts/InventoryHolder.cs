@@ -25,6 +25,11 @@ public abstract class InventoryHolder : MonoBehaviour
     }
 
     protected abstract void LoadInventory(SaveData saveData);
+
+    private void OnDestroy()
+    {
+        SaveGameManager.SaveData();
+    }
 }
 
 

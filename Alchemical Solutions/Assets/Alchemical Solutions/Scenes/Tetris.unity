@@ -922,8 +922,9 @@ MonoBehaviour:
   boardSize: {x: 10, y: 20}
   spawnPosition: {x: -1, y: 8, z: 0}
   scoreText: {fileID: 283332497}
+  potionTarget: {fileID: 0}
   linescleared: 0
-  maxScore: 10
+  maxScore: 6
   SceneToLoad: 1
 --- !u!1 &2144466704
 GameObject:

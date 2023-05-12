@@ -73,8 +73,8 @@ public class ShopSystem
 
     public void PurchaseItem(InventoryItemData data, int amount)
     {
-        if (ContainsItem(data, out ShopSlot slot)) return;
-
+        if (!ContainsItem(data, out ShopSlot slot)) return;
+        Debug.Log("Contains item");
         slot.RemoveFromStack(amount);
     }
 

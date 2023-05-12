@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Alchemical Solutions/Scenes/InHouse.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Alchemical Solutions/Scenes/OutHouse.unity
+    path: Assets/Alchemical Solutions/Scenes/ArchiveOutHouse.unity
     guid: 86d496caeac6eaf448cae9126f94bcec
   - enabled: 1
-    path: Assets/Alchemical Solutions/Scenes/CardMemory.unity
-    guid: e161646c74c992f4dbce1154ec488bae
+    path: Assets/Alchemical Solutions/Scenes/MemoryCardGame.unity
+    guid: ead71cb8c8175eb48a65343b540568d1
   - enabled: 1
     path: Assets/Alchemical Solutions/Scenes/Tetris.unity
     guid: 2cda990e2423bbf4892e6590ba056729

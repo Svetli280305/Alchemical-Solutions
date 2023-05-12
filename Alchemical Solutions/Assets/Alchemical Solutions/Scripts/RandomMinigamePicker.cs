@@ -22,10 +22,11 @@ public class RandomMinigamePicker : MonoBehaviour
       if(canActivate && Keyboard.current.fKey.wasPressedThisFrame)
       {
             Debug.Log("Fkey pressed");
+            Cursor.lockState = CursorLockMode.None;
             craftingPanel.SetActive(true);
       }
 
-       if (Keyboard.current.escapeKey.wasPressedThisFrame) craftingPanel.SetActive(false);
+        if (Keyboard.current.escapeKey.wasPressedThisFrame) { craftingPanel.SetActive(false); Cursor.lockState = CursorLockMode.Locked; };
 
     }
     private void OnTriggerEnter(Collider other)
