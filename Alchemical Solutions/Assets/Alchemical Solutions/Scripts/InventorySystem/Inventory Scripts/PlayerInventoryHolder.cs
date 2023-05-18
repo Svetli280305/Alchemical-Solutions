@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using Yarn.Unity;
 
 public class PlayerInventoryHolder : InventoryHolder
 {
@@ -38,10 +39,17 @@ public class PlayerInventoryHolder : InventoryHolder
 
     public bool AddToInventory(InventoryItemData data, int amount)
     {
-        if(primaryInventorySystem.AddToInventory(data, amount)){
+        if (primaryInventorySystem.AddToInventory(data, amount))
+        {
             return true;
         }
 
         return false;
+    }
+
+    public bool checkForItem(string item)
+    {
+        var containsI = primaryInventorySystem.ContainsItem(GameManager.itemDB.GetItem(item));
+        return containsI;
     }
 }

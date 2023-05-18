@@ -1,10 +1,10 @@
 ﻿title: HelloYarn
 ---
-Hello shopkeeper!
-I would like to purchase your finest potions
+//<<set $hasHealingPotion to checkHealingPot()>>
 
--> Great nice to meet you!
--> what potions would you like?
+Customer: Hello shopkeeper!
+Customer: I would like to purchase a healing potion
+Customer: I just got out of a quest and I need to restock ASAP. You got any in stock?
 
-I would like a healing potion please.
+-> Of course, just give me one moment.
 ===

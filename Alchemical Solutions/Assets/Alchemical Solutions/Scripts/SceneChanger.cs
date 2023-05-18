@@ -19,7 +19,7 @@ public class SceneChanger : MonoBehaviour
             if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 Debug.Log("Is in trigger");
-                SceneManager.LoadScene(sceneToLoad);
+                SceneManager.LoadScene(2);
             }
         }
     }

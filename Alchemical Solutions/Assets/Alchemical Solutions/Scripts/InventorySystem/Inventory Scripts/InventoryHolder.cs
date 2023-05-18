@@ -22,6 +22,8 @@ public abstract class InventoryHolder : MonoBehaviour
         SaveLoad.onLoadGame += LoadInventory;
 
         primaryInventorySystem = new InventorySystem(inventorySize, _gold);
+
+        //SaveGameManager.TryLoadData();
     }
 
     protected abstract void LoadInventory(SaveData saveData);

@@ -15,6 +15,7 @@ public class RandomMinigamePicker : MonoBehaviour
 
     private void Awake()
     {
+        //db = (Database)FindObjectOfType(typeof(Database));
         craftingPanel.SetActive(false);
     }
     private void Update()
@@ -50,6 +51,7 @@ public class RandomMinigamePicker : MonoBehaviour
         Debug.Log("Test");
         bool hasWater = false;
         bool hasSaphhire = false;
+        
         if (playerInv.PrimaryInventorySystem.ContainsItem(db.GetItem("tWater"), out List<InventorySlot> slots)){
             int amount = 0;
             foreach(var slot in slots)

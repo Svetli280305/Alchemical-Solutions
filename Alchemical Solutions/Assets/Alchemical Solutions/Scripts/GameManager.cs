@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] public static Database itemDB;
     public bool paused = false;
 
     void Update()
