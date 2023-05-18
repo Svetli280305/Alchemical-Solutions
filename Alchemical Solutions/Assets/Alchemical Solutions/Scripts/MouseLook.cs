@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class MouseLook : MonoBehaviour
 {
     private InputMaster controls;
-    private float mouseSensitivity = 100f;
+    private float mouseSensitivity = 10f;
     private Vector2 mouseLook;
 
     private float xRotation = 0f;

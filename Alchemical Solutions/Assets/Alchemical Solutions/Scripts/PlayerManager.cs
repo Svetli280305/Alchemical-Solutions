@@ -68,7 +68,7 @@ public class PlayerManager : MonoBehaviour
 
     private InputMaster controls;
 
-    private float moveSpeed = 12f;
+    private float moveSpeed = 9f;
 
     [SerializeField] private Vector3 velocity;
 
