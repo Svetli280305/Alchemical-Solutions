@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Yarn.Unity;
 
 [System.Serializable]
 public abstract class InventoryHolder : MonoBehaviour
@@ -10,10 +11,16 @@ public abstract class InventoryHolder : MonoBehaviour
     [SerializeField] protected InventorySystem primaryInventorySystem;
     [SerializeField] protected int offset = 10;
     [SerializeField] protected int _gold;
+    [SerializeField] protected DialogueRunner dialogueRunner;
+    [SerializeField] protected Database itemmDB;
     
     public int Offset => offset;
 
     public InventorySystem PrimaryInventorySystem => primaryInventorySystem;
+
+    public DialogueRunner DialogueRunner => dialogueRunner;
+
+    public Database ItemmDB => itemmDB;
 
     public static UnityAction<InventorySystem, int> OnDynamicInventoryDisplayRequested; // inv system to display, amount to offset dispaly by
 
@@ -23,6 +30,12 @@ public abstract class InventoryHolder : MonoBehaviour
 
         primaryInventorySystem = new InventorySystem(inventorySize, _gold);
 
+        dialogueRunner.AddFunction("checkItem",
+            delegate (string testingstring)
+            {
+                return primaryInventorySystem.ContainsItem(itemmDB.GetItem(testingstring));
+            }
+        );
         //SaveGameManager.TryLoadData();
     }
 
@@ -31,6 +44,20 @@ public abstract class InventoryHolder : MonoBehaviour
     private void OnDestroy()
     {
         SaveGameManager.SaveData();
+    }
+
+
+    [YarnCommand("addGold")]
+    public void addGold(int goldToAdd)
+    {
+        _gold += goldToAdd;
+    }
+
+    [YarnCommand("sellItem")]
+    public void sellToNpc(string item, int goldToAdd)
+    {
+        primaryInventorySystem.RemoveItemsFromInventory(itemmDB.GetItem(item), 1);
+        _gold += goldToAdd;
     }
 }
 

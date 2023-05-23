@@ -59,7 +59,16 @@ public class Database : ScriptableObject
 
     public InventoryItemData GetItem(string dbRef)
     {
-        return _itemDatabase.Find(i => i.dbReference == dbRef);
+        var item = _itemDatabase.Find(i => i.dbReference == dbRef);
+        if (item)
+        {
+            return item;
+        }
+        else
+        {
+            Debug.Log("No item exists?");
+            return null;
+        }
     }
 
 }

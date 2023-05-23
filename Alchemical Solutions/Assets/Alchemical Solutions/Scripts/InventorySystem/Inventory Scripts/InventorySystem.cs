@@ -77,13 +77,16 @@ public class InventorySystem
 
     public bool ContainsItem(InventoryItemData itemToAdd)
     {
+        if (!itemToAdd) return false;
        var result = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
-       if(result == null)
+       if(result.Count == 0)
         {
+            Debug.Log("False");
             return false;
         }
         else
         {
+            Debug.Log("True");
             return true;
         }
     }

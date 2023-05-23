@@ -80,6 +80,8 @@ public class PlayerManager : MonoBehaviour
 
     private CharacterController controller;
 
+    private PlayerInput playerInput;
+
     public Transform ground;
 
     public float distanceToGround = 0.2f;
@@ -92,7 +94,8 @@ public class PlayerManager : MonoBehaviour
     {
         controls = new InputMaster();
         controller = GetComponent<CharacterController>();
-        SaveGameManager.TryLoadData();
+        playerInput = GetComponent<PlayerInput>();
+        //SaveGameManager.TryLoadData();
     }
 
     private void Update()
@@ -100,6 +103,11 @@ public class PlayerManager : MonoBehaviour
         Grav();
         PlayerMovement();
         Jump();
+
+        if (playerInput.actions["Jump"].triggered)
+        {
+            Debug.Log("Jump?");
+        }
     }
 
     private void Grav()
@@ -118,7 +126,9 @@ public class PlayerManager : MonoBehaviour
     private void PlayerMovement()
     {
         
-        move = controls.Player.Movement.ReadValue<Vector2>();
+        move = playerInput.actions["Movement"].ReadValue<Vector2>();
+
+
 
         Vector3 movement = (move.y * transform.forward) + (move.x * transform.right);
         controller.Move(movement * moveSpeed * Time.deltaTime);

@@ -22,6 +22,7 @@ public class StaticInventoryDisplay : InventoryDisplay
     {
         if (inventoryHolder != null)
         {
+            Debug.Log("Exists");
             inventorySystem = inventoryHolder.PrimaryInventorySystem;
             inventorySystem.OnInventorySlotChanged += UpdateSlot;
         }

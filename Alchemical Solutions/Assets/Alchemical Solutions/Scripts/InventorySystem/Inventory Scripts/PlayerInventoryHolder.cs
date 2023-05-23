@@ -16,12 +16,21 @@ public class PlayerInventoryHolder : InventoryHolder
     {
         SaveLoad.onLoadGame += LoadInventory;
         SaveGameManager.data.playerInventory = new InventorySaveData(primaryInventorySystem);
+        dialogueRunner.AddFunction("testong",
+        delegate (string itemName)
+        {
+            Debug.Log("sewy");
+            return checkForItem(itemName);
+        }
+    );
     }
+
     protected override void LoadInventory(SaveData data)
     {
         // check save data for this chests specific inventory and load it in
         if (data.playerInventory.invSystem != null)
         {
+            Debug.Log("Data to load.");
             this.primaryInventorySystem = data.playerInventory.invSystem;
             OnPlayerInventoryChanged?.Invoke();
         }
@@ -29,7 +38,7 @@ public class PlayerInventoryHolder : InventoryHolder
 
     private void OnDestroy()
     {
-        SaveGameManager.SaveData();
+        //SaveGameManager.SaveData();
     }
 
     private void Update()
@@ -49,7 +58,12 @@ public class PlayerInventoryHolder : InventoryHolder
 
     public bool checkForItem(string item)
     {
-        var containsI = primaryInventorySystem.ContainsItem(GameManager.itemDB.GetItem(item));
+        Debug.Log("Ran.");
+        Debug.Log(primaryInventorySystem.ContainsItem(itemmDB.GetItem(item)));
+        var containsI = primaryInventorySystem.ContainsItem(itemmDB.GetItem(item));
+        Debug.Log(containsI);
         return containsI;
     }
+
+    
 }

@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class UICanvas : MonoBehaviour
 {
     [SerializeField] private ShopKeeperDisplay _shopKeeperDisplay;
+    [SerializeField] private GameObject remap;
 
 
     private void Awake()
@@ -34,6 +35,7 @@ public class UICanvas : MonoBehaviour
     private void Update()
     {
         if(Keyboard.current.escapeKey.wasPressedThisFrame) { _shopKeeperDisplay.gameObject.SetActive(false); Cursor.lockState = CursorLockMode.Locked;  }
+        if(Keyboard.current.zKey.wasPressedThisFrame) { remap.SetActive(true); Cursor.lockState = CursorLockMode.None; }
         
     }
     private void DisplayShopWindow(ShopSystem shopSystem, PlayerInventoryHolder playerInventory)

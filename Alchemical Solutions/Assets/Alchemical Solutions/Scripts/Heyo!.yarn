@@ -1,0 +1,60 @@
+﻿title: Heyo!
+tags:
+position: -97,-135
+---
+<<declare $gold_amount = 0>>
+<<declare $potionRequest = "">>
+<<declare $reasonRequest = "">>
+<<set $potionRequest to generatePotionRequested()>>
+<<if $potionRequest == "Health">>
+    <<jump HealthPotion>>
+<<elseif $potionRequest == "Frost">>
+    <<jump FrostPotion>>
+<<elseif $potionRequest == "Heat">>
+    <<jump HeatPotion>>
+<<endif>>
+===
+title: HealthPotion
+position: 38,66
+---
+<<set $reasonRequest to generateReason("Health")>>
+<<if $reasonRequest == "Prep">>
+   <<set $gold_amount to random_range(40,60)>>
+    Customer: Test
+    Customer: Gimme potion
+    -> Here <<if checkItem("hPotion")>>
+        Customer: Many thanks.
+        The value of variableName is {$gold_amount}.
+        <<sellItem Player "hPotion" 50>>
+        <<stop>>
+    -> Bargain
+        <<declare $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 5 >>
+            Customer: No thanks, same price.
+            -> Here. <<if checkItem("hPotion")>>
+            <<sellItem Player "hPotion" 50>>
+            -> Nope.
+        <<elseif $randomR <= 6>>
+            <<set $gold_amount = $gold_amount + random_range(10,20)>>
+            Customer: Fair reason, heres your cut.
+            -> Here. <<if checkItem("hPotion")>>
+            <<sellItem healthPot $gold_amount>>
+            -> Nope.
+        <<endif>>
+    -> Nope.
+        Customer: Understandable!
+<<elseif $reasonRequest == "LowHP">>
+    Customer: Test2
+<<endif>>
+===
+title: FrostPotion
+position: -193,159
+---
+
+===
+title: HeatPotion
+position: -341,-36
+---
+
+===
