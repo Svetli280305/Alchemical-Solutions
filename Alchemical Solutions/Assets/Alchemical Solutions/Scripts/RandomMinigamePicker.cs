@@ -79,6 +79,8 @@ public class RandomMinigamePicker : MonoBehaviour
 
         if(hasWater && hasSaphhire)
         {
+            playerInv.PrimaryInventorySystem.RemoveItemsFromInventory(db.GetItem("Sapphire"), 2);
+            playerInv.PrimaryInventorySystem.RemoveItemsFromInventory(db.GetItem("tWater"), 1);
             playerInv.PrimaryInventorySystem.AddToInventory(db.GetItem("frostP"), 1);
             SaveGameManager.SaveData();
             int index = Random.Range(3, 5);

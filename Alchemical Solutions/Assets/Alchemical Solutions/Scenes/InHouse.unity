@@ -19513,13 +19513,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2110394991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a04fc9e8c2d804e8d60940da0335f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 54ff961d023daf746ad85cd5483bfa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialogue: {fileID: 2753718018086438728}
-  outOfRange: 1
-  SceneChangerGUI: {fileID: 6566072014513812671}
-  dialogueRunner: {fileID: 3579681405797191477}
+  conversationStartNode: Heyo!
+  inRange: 0
+  isCurrentConvo: 0
 --- !u!4 &2111118105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 368df34ef2c174d49a05aa7c19c004ff, type: 3}

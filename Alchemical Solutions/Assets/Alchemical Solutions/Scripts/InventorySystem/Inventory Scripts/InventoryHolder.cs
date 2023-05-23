@@ -43,7 +43,7 @@ public abstract class InventoryHolder : MonoBehaviour
 
     private void OnDestroy()
     {
-        SaveGameManager.SaveData();
+        //SaveGameManager.SaveData();
     }
 
 

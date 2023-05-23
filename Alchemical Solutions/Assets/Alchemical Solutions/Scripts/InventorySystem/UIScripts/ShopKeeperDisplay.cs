@@ -48,6 +48,8 @@ public class ShopKeeperDisplay : MonoBehaviour
 
     private void RefreshDisplay()
     {
+
+        Debug.Log("Refreshing.");
         if(_buyButton != null)
         {
             _buyButtonText.text = _isSelling ? "Sell Items" : "Buy Items";

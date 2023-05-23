@@ -38,7 +38,7 @@ public class PlayerInventoryHolder : InventoryHolder
 
     private void OnDestroy()
     {
-        //SaveGameManager.SaveData();
+
     }
 
     private void Update()
