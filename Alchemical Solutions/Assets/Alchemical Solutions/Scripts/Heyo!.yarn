@@ -5,56 +5,306 @@ position: -97,-135
 <<declare $gold_amount = 0>>
 <<declare $potionRequest = "">>
 <<declare $reasonRequest = "">>
+<<declare $randomR to 0>>
 <<set $potionRequest to generatePotionRequested()>>
 <<if $potionRequest == "Health">>
-    <<jump HealthPotion>>
+    <<jump HealthpPotion>>
 <<elseif $potionRequest == "Frost">>
     <<jump FrostPotion>>
 <<elseif $potionRequest == "Heat">>
     <<jump HeatPotion>>
 <<endif>>
 ===
-title: HealthPotion
+title: HealthpPotion
 position: 38,66
 ---
 <<set $reasonRequest to generateReason("Health")>>
 <<if $reasonRequest == "Prep">>
-   <<set $gold_amount to random_range(40,60)>>
-    Customer: Test
-    Customer: Gimme potion
-    -> Here <<if checkItem("hPotion")>>
-        Customer: Many thanks.
-        The value of variableName is {$gold_amount}.
-        <<sellItem Player "hPotion" 50>>
+    //<<set $gold_amount to generateGold("Prep")>>
+    Customer: Hey!
+	Customer: I'm about to go out questing with my party.
+	Customer: Think I could buy an extra health potion quickly for 35.
+    -> Of course, no problem. <<if checkItem("hpPotion")>>
+        Customer: Thanks, have a good day.
+        <<sellItem "healthPot" "Prep" false>>
+		<<nextCustomer>>
         <<stop>>
-    -> Bargain
-        <<declare $randomR to 0>>
+    -> A bit higher surely? <<if checkItem("hpPotion")>>
+        <<set $randomR to 0>>
         <<set $randomR to random_range(0,10)>>
         <<if $randomR >= 5 >>
             Customer: No thanks, same price.
-            -> Here. <<if checkItem("hPotion")>>
-            <<sellItem Player "hPotion" 50>>
+            -> Here. <<if checkItem("hpPotion")>>
+				<<sellItem "healthPot" "Prep" false>>
+				<<nextCustomer>>
+				<<stop>>
             -> Nope.
+				Customer: Oh well.
+				Customer: I'll just buy one elsewhere.
+				<<nextCustomer>>
+				<<stop>>
         <<elseif $randomR <= 6>>
-            <<set $gold_amount = $gold_amount + random_range(10,20)>>
-            Customer: Fair reason, heres your cut.
-            -> Here. <<if checkItem("hPotion")>>
-            <<sellItem healthPot $gold_amount>>
+            <<set $gold_amount = $gold_amount + 15>>
+            Customer: Fine, 15 gold extra.
+            -> Here. <<if checkItem("hpPotion")>>
+				Customer: Thanks.
+				<<sellItem "healthPot" "Prep" true>>
+				<<nextCustomer>>
+				<<stop>>
             -> Nope.
+				Customer: Fine by me.
+				Customer: I'll just shop elsewhere.
+				<<nextCustomer>>
+				<<stop>>
+				
         <<endif>>
     -> Nope.
         Customer: Understandable!
+		<<nextCustomer>>
+		<<stop>>
+	-> Give me a moment.
+		Customer: Alright, be quick though.
+		<<stop>>
 <<elseif $reasonRequest == "LowHP">>
-    Customer: Test2
+    //<<set $gold_amount to generateGold("LowHP")>>
+    Customer: I need a health potion like now.
+	Customer: I was just on a quest with my party and we got ambushed.
+	Customer: I'll give you 25, just get me a potion.
+    -> Here, take this <<if checkItem("hpPotion")>>
+        Customer: Thanks you, you're a life saver.
+        <<sellItem "hpPotion" "LowHP" false>>
+		<<nextCustomer>>
+        <<stop>>
+    -> Sorry to tell you, but we charge a bit higher. <<if checkItem("hpPotion")>>
+        <<set $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 7 >>
+            Customer: That's all I have!
+            -> Here. <<if checkItem("hpPotion")>>
+				Customer: Thank you so much!
+				<<sellItem "hpPotion" "LowHP" false>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: Fine!
+				Customer: I'll find an actual helpful priest or shop.
+				<<nextCustomer>>
+				<<stop>>
+        <<elseif $randomR <= 8>>
+            <<set $gold_amount = $gold_amount + 10>>
+            Customer: 10 extra is all I have please!
+            -> Here. <<if checkItem("hpPotion")>>
+				Customer: Thank's so much1
+				<<sellItem "hpPotion" "LowHP" true>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: You can't be serious!
+				Customer: You know what whatever, screw you.
+				<<nextCustomer>>
+				<<stop>>
+        <<endif>>
+    -> Nope.
+        Customer: You can't be doing this to me!
+		Customer: Fine, I'll help myself.
+		<<nextCustomer>>
+		<<stop>>
+	-> Give me a moment.
+		Customer: Alright, be quick though.
+		<<stop>>
 <<endif>>
 ===
 title: FrostPotion
 position: -193,159
 ---
-
+<<set $reasonRequest to generateReason("Frost")>>
+<<if $reasonRequest == "Cooling">>
+    //<<set $gold_amount to generateGold("Cooling")>>
+    Customer: Morning!
+	Customer: I'm trying to cool down my forge and it's quite heavt duty.
+	Customer: I need a frost potion to try get this done, {$gold_amount} sound good?
+    -> Sure, here you go! <<if checkItem("hpPotion")>>
+        Customer: Pleasure doing business!
+		<<sellItem "fPotion" "Cooling" false>>
+		<<nextCustomer>>
+        <<stop>>
+    -> Frost potions aren't easy to make... a bit more? <<if checkItem("hpPotion")>>
+        <<set $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 5 >>
+            Customer: You know what sure, how about 20 extra gold?
+            -> Here. <<if checkItem("hpPotion")>>
+				<<sellItem "fPotion" "Cooling" true>>
+				<<nextCustomer>>
+				<<stop>>
+            -> No deal.
+				Customer: Oh well.
+				Customer: I'll just buy one elsewhere.
+				<<nextCustomer>>
+				<<stop>>
+        <<elseif $randomR <= 6>>
+            Customer: That's all I'm offering.
+            -> Here. <<if checkItem("hpPotion")>>
+				Customer: Thanks.
+				<<sellItem "fPotion" "Cooling" false>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: I'll cool my forge myself then.
+				<<nextCustomer>>
+				<<stop>>
+				
+        <<endif>>
+    -> Out of stock.
+        Customer: Understandable!
+		<<nextCustomer>>
+		<<stop>>
+	-> Give me a moment.
+		Customer: Alright, be quick though.
+		<<stop>>
+<<elseif $reasonRequest == "Fever">>
+    //<<set $gold_amount to generateGold("Fever")>>
+    Customer: One of my patients came down a heavy fever.
+	Customer: You have any frost potions that could help?
+	Customer: I'll give you 40 for one.
+    -> Here, take this <<if checkItem("fPotion")>>
+        Customer: Thank you, I can finally treat them.
+        <<sellItem "fPotion" "Fever" false>>
+		<<nextCustomer>>
+        <<stop>>
+    -> Sorry to tell you, but we charge a bit higher. <<if checkItem("fPotion")>>
+        <<set $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 7 >>
+            Customer: That's all I have allocated on our budget.
+            -> Here. <<if checkItem("fPotion")>>
+				Customer: Thank you so much!
+				<<sellItem "fPotion" "Fever" false>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: Fine!
+				Customer: I'll find an actual helpful priest or shop.
+				<<nextCustomer>>
+				<<stop>>
+        <<elseif $randomR <= 8>>
+            <<set $gold_amount = $gold_amount + 10>>
+            Customer: 15 gold is the most I can take from my budget, please.
+            -> Here. <<if checkItem("fPotion")>>
+				Customer: Thank's so much1
+				<<sellItem "fPotion" "Fever" true>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: You can't be serious!
+				Customer: You know what whatever, screw you.
+				<<nextCustomer>>
+				<<stop>>
+        <<endif>>
+    -> Nope.
+        Customer: You can't be doing this to me!
+		Customer: Fine, I'll help myself.
+		<<nextCustomer>>
+		<<stop>>
+<<endif>>
 ===
 title: HeatPotion
 position: -341,-36
 ---
-
+<<set $reasonRequest to generateReason("Heat")>>
+<<if $reasonRequest == "Firewood">>
+    //<<set $gold_amount to generateGold("Firewood")>>
+    Customer: Morning!
+	Customer: Trying to grab a heat potion so our fire lasts longer.
+	Customer: Out camping right now you see.
+	Customer: 25 should do right?
+    -> Sure, here you go! <<if checkItem("hPotion")>>
+        Customer: Pleasure doing business!
+		<<sellItem "hPotion" "Firewood" false>>
+		<<nextCustomer>>
+        <<stop>>
+    -> You can a bit higher surely? <<if checkItem("hpPotion")>>
+        <<set $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 5 >>
+            Customer: Alright, you drive a hard bargain.
+			Customer: 10 gold extra enough?
+            -> Yes it is. Here. <<if checkItem("hpPotion")>>
+				Customer: Thanks.
+				<<sellItem "hPotion" "Firewood" true>>
+				<<nextCustomer>>
+				<<stop>>
+            -> No deal.
+				Customer: Oh well.
+				Customer: Back to rubbing sticks and stone.
+				<<nextCustomer>>
+				<<stop>>
+        <<elseif $randomR <= 6>>
+            Customer: That's all I got on me.
+            -> Here. <<if checkItem("hpPotion")>>
+				Customer: Thanks.
+				<<sellItem "hPotion" "Firewood" false>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: It's all good, I'll just fan the flame.
+				<<nextCustomer>>
+				<<stop>>
+				
+        <<endif>>
+    -> Out of stock.
+        Customer: Alright, see you then.
+		<<nextCustomer>>
+		<<stop>>
+	-> Give me a moment.
+		Customer: Alright, be quick please.
+		<<stop>>
+<<elseif $reasonRequest == "Cold">>
+    //<<set $gold_amount to generateGold("Cold")>>
+    Customer: One of my patients came down a horrible cold.
+	Customer: You have any frost potions that could help?
+	Customer: I'll give you 40 for one.
+    -> Here, take this <<if checkItem("hPotion")>>
+        Customer: Thank you, I can finally treat them.
+        <<sellItem "hPotion" "Cold" false>>
+		<<nextCustomer>>
+        <<stop>>
+    -> Sorry to tell you, but we charge a bit higher. <<if checkItem("hPotion")>>
+        <<set $randomR to 0>>
+        <<set $randomR to random_range(0,10)>>
+        <<if $randomR >= 7 >>
+            Customer: That's all I have allocated on our budget.
+            -> Here. <<if checkItem("hPotion")>>
+				Customer: Thank you so much!
+				<<sellItem "hPotion" "Cold" false>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: Fine!
+				Customer: I'll find an actual helpful priest or shop.
+				<<nextCustomer>>
+				<<stop>>
+        <<elseif $randomR <= 8>>
+            <<set $gold_amount = $gold_amount + 10>>
+            Customer: 15 gold is the most I can take from my budget, please.
+            -> Here. <<if checkItem("hPotion")>>
+				Customer: Thank's so much1
+				<<sellItem "hPotion" "Cold" true>>
+				<<nextCustomer>>
+				<<stop>>
+            -> Nope.
+				Customer: You can't be serious!
+				Customer: You know what whatever, screw you.
+				<<nextCustomer>>
+				<<stop>>
+        <<endif>>
+    -> Nope.
+        Customer: You can't be doing this to me!
+		Customer: Fine, I'll help myself.
+		<<nextCustomer>>
+		<<stop>>
+	-> Give me a moment.
+		Customer: Alright, be quick please.
+		<<stop>>
+<<endif>>
 ===

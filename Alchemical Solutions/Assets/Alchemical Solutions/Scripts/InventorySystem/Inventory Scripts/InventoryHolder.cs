@@ -54,10 +54,97 @@ public abstract class InventoryHolder : MonoBehaviour
     }
 
     [YarnCommand("sellItem")]
-    public void sellToNpc(string item, int goldToAdd)
+    public void sellToNpc(string potion, string reason, bool didNegotiate)
     {
-        primaryInventorySystem.RemoveItemsFromInventory(itemmDB.GetItem(item), 1);
-        _gold += goldToAdd;
+        switch (potion)
+        {
+            case "hpPotion":
+                if (reason == "LowHP")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(35);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(25);
+                    }
+                }
+                else if (reason == "Prep")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(50);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(35);
+                    }
+                }
+                break;
+
+            case "fPotion":
+                if (reason == "Cooling")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(35);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(25);
+                    }
+                }
+                else if (reason == "Fever")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(50);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(35);
+                    }
+                }
+                break;
+
+            case "hPotion":
+                if (reason == "Firewood")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(35);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(25);
+                    }
+                }
+                else if (reason == "Cold")
+                {
+                    if (didNegotiate)
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(50);
+                    }
+                    else
+                    {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(40);
+                    }
+                }
+                break;
+        }
     }
 }
 
