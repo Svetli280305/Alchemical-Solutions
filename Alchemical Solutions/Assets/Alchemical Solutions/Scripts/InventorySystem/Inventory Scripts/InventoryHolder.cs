@@ -101,6 +101,11 @@ public abstract class InventoryHolder : MonoBehaviour
                         primaryInventorySystem.GainGold(35);
                     }
                 }
+                else if (reason == "stacyQuest")
+                {
+                    primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                    primaryInventorySystem.GainGold(30);
+                }
                 break;
 
             case "fPotion":
@@ -158,6 +163,13 @@ public abstract class InventoryHolder : MonoBehaviour
                         primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
                         primaryInventorySystem.GainGold(40);
                     }
+                }
+                break;
+            case "haPotion":
+                if (reason == "Quest")
+                {
+                        primaryInventorySystem.RemoveItemsFromInventory(ItemmDB.GetItem(potion), 1);
+                        primaryInventorySystem.GainGold(30);
                 }
                 break;
         }
