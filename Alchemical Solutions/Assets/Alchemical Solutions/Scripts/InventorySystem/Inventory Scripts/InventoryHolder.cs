@@ -36,6 +36,22 @@ public abstract class InventoryHolder : MonoBehaviour
                 return primaryInventorySystem.ContainsItem(itemmDB.GetItem(testingstring));
             }
         );
+        dialogueRunner.AddFunction("checkItems",
+            delegate (string testingstring, int amountToCheck)
+            {
+                primaryInventorySystem.ContainsItem(itemmDB.GetItem(testingstring), out List<InventorySlot> slots);
+                int amount = 0;
+                foreach (var slot in slots)
+                {
+                    amount += slot.StackSize;
+                }
+                if (amount >= amountToCheck)
+                {
+                    return true;
+                }
+                else { return false; }
+            }
+        );
         //SaveGameManager.TryLoadData();
     }
 

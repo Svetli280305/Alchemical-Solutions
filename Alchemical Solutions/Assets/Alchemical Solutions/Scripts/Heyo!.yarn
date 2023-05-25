@@ -58,13 +58,15 @@ position: 38,66
 				<<stop>>
 				
         <<endif>>
-    -> Nope.
-        Customer: Understandable!
-		<<nextCustomer>>
-		<<stop>>
-	-> Give me a moment.
-		Customer: Alright, be quick though.
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not interested in the offer.
+			Customer: I'll be taking my leave then.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<elseif $reasonRequest == "LowHP">>
     //<<set $gold_amount to generateGold("LowHP")>>
     Customer: I need a health potion like now.
@@ -104,14 +106,15 @@ position: 38,66
 				<<nextCustomer>>
 				<<stop>>
         <<endif>>
-    -> Nope.
-        Customer: You can't be doing this to me!
-		Customer: Fine, I'll help myself.
-		<<nextCustomer>>
-		<<stop>>
-	-> Give me a moment.
-		Customer: Alright, be quick though.
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not interested in the offer.
+			Customer: I'll be taking my leave then.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<endif>>
 ===
 title: FrostPotion
@@ -123,17 +126,17 @@ position: -193,159
     Customer: Morning!
 	Customer: I'm trying to cool down my forge and it's quite heavt duty.
 	Customer: I need a frost potion to try get this done, {$gold_amount} sound good?
-    -> Sure, here you go! <<if checkItem("hpPotion")>>
+    -> Sure, here you go! <<if checkItem("fPotion")>>
         Customer: Pleasure doing business!
 		<<sellItem "fPotion" "Cooling" false>>
 		<<nextCustomer>>
         <<stop>>
-    -> Frost potions aren't easy to make... a bit more? <<if checkItem("hpPotion")>>
+    -> Frost potions aren't easy to make... a bit more? <<if checkItem("fPotion")>>
         <<set $randomR to 0>>
         <<set $randomR to random_range(0,10)>>
         <<if $randomR >= 5 >>
             Customer: You know what sure, how about 20 extra gold?
-            -> Here. <<if checkItem("hpPotion")>>
+            -> Here. <<if checkItem("fPotion")>>
 				<<sellItem "fPotion" "Cooling" true>>
 				<<nextCustomer>>
 				<<stop>>
@@ -144,7 +147,7 @@ position: -193,159
 				<<stop>>
         <<elseif $randomR <= 6>>
             Customer: That's all I'm offering.
-            -> Here. <<if checkItem("hpPotion")>>
+            -> Here. <<if checkItem("fPotion")>>
 				Customer: Thanks.
 				<<sellItem "fPotion" "Cooling" false>>
 				<<nextCustomer>>
@@ -155,13 +158,15 @@ position: -193,159
 				<<stop>>
 				
         <<endif>>
-    -> Out of stock.
-        Customer: Understandable!
-		<<nextCustomer>>
-		<<stop>>
-	-> Give me a moment.
-		Customer: Alright, be quick though.
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not interested in the offer.
+			Customer: I'll be taking my leave then.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<elseif $reasonRequest == "Fever">>
     //<<set $gold_amount to generateGold("Fever")>>
     Customer: One of my patients came down a heavy fever.
@@ -201,11 +206,15 @@ position: -193,159
 				<<nextCustomer>>
 				<<stop>>
         <<endif>>
-    -> Nope.
-        Customer: You can't be doing this to me!
-		Customer: Fine, I'll help myself.
-		<<nextCustomer>>
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not interested in the offer.
+			Customer: I'll be taking my leave then, I need this potion ASAP.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<endif>>
 ===
 title: HeatPotion
@@ -252,13 +261,16 @@ position: -341,-36
 				<<stop>>
 				
         <<endif>>
-    -> Out of stock.
-        Customer: Alright, see you then.
-		<<nextCustomer>>
-		<<stop>>
-	-> Give me a moment.
-		Customer: Alright, be quick please.
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not a good enough offer.
+			Customer: Oh.
+			Customer: I'll be taking my leave then.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<elseif $reasonRequest == "Cold">>
     //<<set $gold_amount to generateGold("Cold")>>
     Customer: One of my patients came down a horrible cold.
@@ -298,13 +310,175 @@ position: -341,-36
 				<<nextCustomer>>
 				<<stop>>
         <<endif>>
-    -> Nope.
-        Customer: You can't be doing this to me!
-		Customer: Fine, I'll help myself.
-		<<nextCustomer>>
-		<<stop>>
-	-> Give me a moment.
-		Customer: Alright, be quick please.
-		<<stop>>
+    -> Can't do it.
+        Customer: How come?
+		-> Not interested in the offer.
+			Customer: I'll be taking my leave then.
+			<<nextCustomer>>
+			<<stop>>
+		-> Give me a second, let me see what I can do.
+			Customer: Do try and be quick please.
+			<<stop>>
 <<endif>>
+===
+title: TutorialBegin
+position: -457,176
+---
+<<declare $tutPT1 to false>>
+<<declare $tutPT2 to false>>
+<<declare $tutPT3 to false>>
+<<if visited("TutorialBegin") == false>>
+	???: Boss!
+	???: You're finally back.
+	???: Yeray Fuet, the best assistant a man could ask for is here.
+	Yeray: Boss?
+	Yeray: You seem to look a bit out of it?
+	Yeray: Want some help today or..?
+	-> Yeah, some help right now would be much appreciated.
+		Yeray: No problem!
+		Yeray: We're running a business here.
+		Yeray: I'm you're assistant/apprentince and you're an alchemist.
+		Yeray: You'll be making potions and selling them.
+		Yeray: Before we even get to that part.
+		Yeray: Go head to your checkbook and order 2 Sapphires and 1 Timyan Water.
+		Yeray: Press I to view your inventory and they should be there.
+		Yeray: Youre checkbook was open on your desk if I remember correctly.
+		Yeray: Just walk up to it and press E.
+		Yeray: If you ever want to rebind your controls just press Z!
+		Yeray: It shouldn't be too hard to see.
+		<<set $tutPT1 to false>>
+		<<stop>>
+	-> Nope, just a quick lapse in judgement.
+		Yeray: All good, just checking up on you!
+		Yeray: Take it easy from time to time alright?
+		<<set $tutPT1 to true>>
+		<<set $tutPT3 to true>>
+		<<set $tutPT2 to true>>
+<<else>>
+	<<jump TutorialShop>>
+<<endif>>
+===
+title: TutorialShop
+position: -463,-191
+---
+<<if $tutPT1 == true>>
+	<<jump TutorialCraft>>
+<<endif>>
+Yeray: Have you bought the 2 Saophires and the bottle of Timayan Water?
+-> Yes, here they are <<if checkItems("Sapphire", 2) && checkItems("tWater", 1)>>
+	Yeray: Good good, I can feel the chill from the bottle.
+	Yeray: Just making sure you're good.
+	Yeray: Have to double check because of my condition.
+	Yeray: Colour blindness requires me to be extra careful handling things.
+	Yeray: So with that out of the way here's your next task.
+	Yeray: Go to the cauldron and craft a Frost potion, you'll need it for later.
+	Yeray: You'll probably have to load your game after you complete the task to make the potion.
+	Yeray: You might also find some ingredients that I haven't packed away yet.
+	Yeray: Just press to E to pick them up.
+	Yeray: Go on then, get going!
+	<<set $tutPT1 to true>>
+	<<stop>>
+-> How do I buy them again?
+	Yeray: Walk to your checkbook it should open on the table near the cauldron.
+	Yeray: You should be able to press E to interact with it.
+	Yeray: Add 2 sapphires and 1 Timayan Water to your basket.
+	Yeray: Once you've that done you should be able to buy them!
+	<<stop>>
+===
+title: TutorialCraft
+position: -416,-362
+---
+<<if $tutPT2 == true>>
+	<<jump TutorialBargain>>
+<<endif>>
+Yeray: Have you crafted the Frost potion?
+-> Yes, here it is <<if checkItem("fPotion")>>
+	Yeray: Great job, I can feel the chill from here!
+	Yeray: In the case that you don't see your items do try to re-load your data.
+	Yeray: Just click load in the top-left.
+	Yeray: With that done, it's time to sell the potion.
+	Yeray: Go back to the front area, there should be a customer waiting for you!
+	Yeray: I've no idea if it's someone that wants a frost potion. That'll be up to you to discover.
+	Yeray: What I don't know however, is why they want it and how much they are offering.
+	Yeray: This is your business, so it's your decision if you even accept their offer.
+	Yeray: At least go and see what they have to say.
+	Yeray: Come back once you get a feel for it.
+	<<set $tutPT2 to true>>
+	<<stop>>
+-> How do I craft a potion again?
+	Yeray: Walk up to the cauldron and press E to interact with it.
+	Yeray: Click the button next to the frost potions recipe.
+	Yeray: You'll be taken into a minigame that you  need to pass.
+	Yeray: If you don't seem to see the potion in your inventory.
+	Yeray: Quickly hit the load button and it should appear there.
+	<<stop>>
+===
+title: TutorialBargain
+position: -198,-352
+---
+<<if $tutPT3 == true>>
+	<<jump GeneralNode>>
+<<endif>>
+Yeray: Are you done?
+-> Yeah, I've got a feel for it now.
+	Yeray: Great!
+	Yeray: That's all I have to tell you really.
+	Yeray: Keep at it boss!
+	Yeray: I'll be here if you ever need a reminding on anything!
+	<<set $tutPT3 to true>>
+-> Give me another explanation on dealing with customers?
+	Yeray: When you go up to a customer and speak to them.
+	Yeray: They'll let you know immediately what potion they want, why and for how much.
+	Yeray: It's up to you to decide what you do after that.
+	Yeray: You can decide to accept their offer as is, bargain for a higher price or flat out decline it.
+	Yeray: Bargaining may not always work and they may decline your offer and stick to their initial one.
+	Yeray: That should be it really.
+===
+title: GeneralNode
+position: 27,-323
+---
+Yeray: Boss!
+Yeray: You need anything?
+-> How do I...
+	Yeray: ?
+	-> Order Items
+		Yeray: Go up to your chequebook and press E.
+		Yeray: You'll have the option to both sell and buy things.
+		Yeray: Add anything you want to your basket and then buy them.
+		<<stop>>
+	-> How do I view my controls?
+		Yeray: Press Z and bring up the rebind menu.
+		Yeray: It has everything that you need alongside the option to rebind your controls.
+		<<stop>>
+	-> How do I create potions?
+		Yeray: Walk to the cauldron and interact with it.
+		Yeray: Select which potion you want to craft.
+		Yeray: As long as you have the correct ingredients for it you'll be required to complete a quick minigame.
+		Yeray: Once you're done it should be in your inventory. In the case that you can't see anything in your inventory, just hit the load button.
+		<<stop>>
+-> Yeray, you mentioned you were colour blind?
+	Yeray: Yeah, I have monochramy.
+	Yeray: Rare variation of colour blindness but it means I only see in greyscale.
+	Yeray: I've gotten used to it but it does get in the way of things sometimes.
+	Yeray: A big example is when I go out to collect fresh ingredients.
+	Yeray: I have to make sure I'm careful with what I'm collecting and usually keep track of what I'm looking for by shape rather than colour.
+	-> Anything I can do to make work easier for you?
+		Yeray: Could you order some labels?
+		Yeray: It's something extremely small but it makes such a big difference.
+		Yeray: I can tell what a potion usually is by the aura gives off but it can still get dangerous at times.
+		Yeray: Labelled potions would just mean I have to read the label it makes it so much easier.
+		Yeray: If you do end up buying like, 5 packs of labels?
+		Yeray: Just let me know.
+		<<declare $yerayQuestActive to true>>
+		<<stop>>
+-> I got the labels! <<if $yerayQuestActive && checkItems("labels", 5)>>
+	Yeray: Really?
+	Yeray: You did!
+	Yeray: You're such a big help boss thank you!
+	Yeray: This'll be so useful for work, thank you so much.
+	Yeray: I'll get to it right away!
+	<<stop>>
+	<<set $yerayQuestActive to false>>
+
+
 ===
