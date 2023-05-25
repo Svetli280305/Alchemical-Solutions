@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 3
   displayName: Frost Potion
-  dbReference: frostP
+  dbReference: fPotion
   description: A frost potiom, has multiple applications. Freezing, chilling and
     the like.
   icon: {fileID: 2399578771559581788, guid: dddf21d42a6a1164cb2bdb01ac305a44, type: 3}
