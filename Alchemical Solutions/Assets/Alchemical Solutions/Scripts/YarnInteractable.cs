@@ -15,6 +15,7 @@ public class YarnInteractable : MonoBehaviour
     {
         dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
         dialogueRunner.onDialogueComplete.AddListener(EndConversation);
+        dialogueRunner.LoadStateFromPlayerPrefs();
     }
 
 
@@ -32,6 +33,11 @@ public class YarnInteractable : MonoBehaviour
             isCurrentConvo = true;
             StartConversation();
         }
+    }
+
+    private void OnDestroy()
+    {
+        dialogueRunner.SaveStateToPlayerPrefs();
     }
     // reverse StartConversation's changes: 
     // re-enable scene interaction, deactivate indicator, etc.

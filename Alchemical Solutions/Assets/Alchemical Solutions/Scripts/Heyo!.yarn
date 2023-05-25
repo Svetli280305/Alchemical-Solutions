@@ -325,9 +325,11 @@ title: TutorialBegin
 position: -457,176
 ---
 <<declare $tutPT1 to false>>
+<<declare $startedTutorial to false>>
 <<declare $tutPT2 to false>>
 <<declare $tutPT3 to false>>
-<<if visited("TutorialBegin") == false>>
+
+<<if $startedTutorial == false>>
 	???: Boss!
 	???: You're finally back.
 	???: Yeray Fuet, the best assistant a man could ask for is here.
@@ -346,7 +348,7 @@ position: -457,176
 		Yeray: Just walk up to it and press E.
 		Yeray: If you ever want to rebind your controls just press Z!
 		Yeray: It shouldn't be too hard to see.
-		<<set $tutPT1 to false>>
+		<<set $startedTutorial to true>>
 		<<stop>>
 	-> Nope, just a quick lapse in judgement.
 		Yeray: All good, just checking up on you!
