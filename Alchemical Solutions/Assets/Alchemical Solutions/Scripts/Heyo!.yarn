@@ -1,4 +1,4 @@
-﻿title: Heyo!
+title: Heyo!
 tags:
 position: -97,-135
 ---
@@ -483,4 +483,99 @@ Yeray: You need anything?
 	<<set $yerayQuestActive to false>>
 
 
+===
+title: Luisiana
+position: 190,-118
+---
+<<declare $LuisianaQuestStarted = "False">>
+<<if $LuisianaQuestStarted == "False">>
+    ???: Oh, hello.
+    ???: I was just waiting for the queue to die down.
+    ???: It's nice that you came to check up on me though.
+    ???: I tend not to move much anyways so I doubt I would of stepped up to ask you.
+	???: I nearly forgot to say, how rude.
+	Luisiana: I'm Luisiana, the pleasure is all mine.
+    -> What do you need?
+        Luisiana: Oh right, what I needed.
+        Luisiana: You see, I'm a retired adventurer.
+        Luisiana: Took a heavy fall you see on a quest.
+        Luisiana: Can't really move the same ever since.
+        Luisiana: Doc says I have acute pains in my knee.
+        Luisiana: I can't really go outside like I used to,
+        Luisiana: Knee acts up and things can get a bit dangerous.
+        Luisiana: I was wondering if you had anything for it?
+        -> A haste potion should do. 30 gold?
+            Luisiana: Gladly.
+            Luisiana: Thank you so much for this!
+            Luisiana: I've heard that they increase your speed overall.
+            Luisiana: I should be able to move around quicker without aggravating my knee!
+            Luisiana: Thank you once again for this.
+			<<sellItem "haPotion" "Quest" false>>
+            <<set $LuisianaQuestStarted to "Completed">>
+            <<stop>>
+        -> No, I'll look into it though.
+            Luisiana: Alright, I'll be here waiting.
+            Luisiana: Just speak to me if you have something for me, alright?
+            <<set $LuisianaQuestStarted to "InProgress">>
+            <<stop>>
+<<elseif $LuisianaQuestStarted == "InProgress">>
+    Luisana: You got anything for me?
+    -> A haste potion should do. 30 gold?
+            Luisiana: Gladly.
+            Luisiana: Thank you so much for this!
+            Luisiana: I've heard that they increase your speed overall.
+            Luisiana: I should be able to move around quicker without aggravating my knee!
+            Luisiana: Thank you once again for this.
+            <<set $LuisianaQuestStarted to "Completed">>
+			<<sellItem "haPotion" "Quest" false>>
+            <<stop>>
+    -> Sorry, I'm still looking for something.
+        Luisiana: Oh, okay.
+        Luisiana: Just let me know when you do alright?
+        <<stop>>
+<<elseif $LuisianaQuestStarted == "Completed">>
+    Luisiana: With this I'll finally be able to enjoy the wilderness for a bit again.
+    Luisiana: Thanks so much.
+    <<stop>>
+<<endif>>
+===
+title: Stacy
+position: 189,-51
+---
+<<declare $stacyQuestState to "False">>
+<<if $stacyQuestState == "False">>
+	Stacy: Oh hey.
+	Stacy: I was just about to place down a note for an order.
+	Stacy: Since you're hear now let me just tell you up front.
+	Stacy: You see, I've developed a serious case of Arthritis.
+	Stacy: Worst part is it's probably from being a writer.
+	Stacy: I'm currently working on something new and if I can anything to help treat it.
+	Stacy: It'll be enough for me.
+	Stacy: You think you got anything for me?
+	-> No problem at all. 30 gold for a health potion.
+		Stacy: Of course! No problem at all.
+		Stacy: Thanks, if you want I'll keep you updated on my book!
+		<<sellItem "hpPotion" "stacyQuest" false>>
+		<<set $stacyQuestState to "Completed">>
+		<<stop>>
+	-> Let me try find something to help you, one moment.
+		Stacy: Of course, take your time.
+		<<set $stacyQuestState to "inProgress">>
+		<<stop>>
+<<elseif $stacyQuestState == "inProgress">>
+	Stacy: Any news?
+	-> I got something for you. 30 gold for a health potion.
+		Stacy: Of course! No problem at all.
+		Stacy: Thanks, if you want I'll keep you updated on my book!
+		<<sellItem "hpPotion" "stacyQuest" false>>
+		<<set $stacyQuestState to "Completed">>
+		<<stop>>
+	-> Still looking, sorry about that.
+		Stacy: No worries at all, take your time.
+		<<stop>>
+<<elseif $stacyQuestState == "Completed">>
+	Stacy: I'll be getting back to writing soon!
+	Stacy: Don't be suprised if I reference you!
+	<<stop>>
+<<endif>>
 ===
